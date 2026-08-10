@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { forBusiness, images } from "@/content/site";
 import { products } from "@/data/products";
 import { Container, SectionBlack, SectionCream, Eyebrow } from "@/components/Section";
@@ -87,13 +87,13 @@ function ForBusinessPage() {
                     className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-b py-4"
                   >
                     <span className="truncate text-lg">{p.name}</span>
-                    <a
-                      href={`/sheets/sari-${p.slug}.pdf`}
-                      download
+                    <Link
+                      to="/products/$slug"
+                      params={{ slug: p.slug }}
                       className="eyebrow shrink-0 border-b border-gold pb-1 text-gold"
                     >
                       {forBusiness.sheetCta}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

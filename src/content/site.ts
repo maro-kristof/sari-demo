@@ -250,8 +250,8 @@ export const forBusiness = {
   ],
   sheetsLabel: "Product sheets",
   sheetsBody:
-    "One page PDF sheets with tasting notes, specification and wine list naming.",
-  sheetCta: "Download",
+    "Tasting notes, specification and suggested wine list naming for each expression. Ask us for the print ready PDF sheets.",
+  sheetCta: "View details",
   formLabel: "Wholesale inquiry",
   formIntro:
     "Tell us about your venue and we will come back with pricing, samples and delivery options.",
