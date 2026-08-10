@@ -15,6 +15,7 @@ import { Route as ForBusinessRouteImport } from './routes/for-business'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as StoryRouteImport } from './routes/story'
 import { Route as WhereToBuyRouteImport } from './routes/where-to-buy'
+import { Route as LegalCookiesRouteImport } from './routes/legal.cookies'
 import { Route as LegalPrivacyRouteImport } from './routes/legal.privacy'
 import { Route as LegalTermsRouteImport } from './routes/legal.terms'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
@@ -50,6 +51,11 @@ const WhereToBuyRoute = WhereToBuyRouteImport.update({
   path: '/where-to-buy',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LegalCookiesRoute = LegalCookiesRouteImport.update({
+  id: '/legal/cookies',
+  path: '/legal/cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LegalPrivacyRoute = LegalPrivacyRouteImport.update({
   id: '/legal/privacy',
   path: '/legal/privacy',
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/products': typeof ProductsRouteWithChildren
   '/story': typeof StoryRoute
   '/where-to-buy': typeof WhereToBuyRoute
+  '/legal/cookies': typeof LegalCookiesRoute
   '/legal/privacy': typeof LegalPrivacyRoute
   '/legal/terms': typeof LegalTermsRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -89,6 +96,7 @@ export interface FileRoutesByTo {
   '/for-business': typeof ForBusinessRoute
   '/story': typeof StoryRoute
   '/where-to-buy': typeof WhereToBuyRoute
+  '/legal/cookies': typeof LegalCookiesRoute
   '/legal/privacy': typeof LegalPrivacyRoute
   '/legal/terms': typeof LegalTermsRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -102,6 +110,7 @@ export interface FileRoutesById {
   '/products': typeof ProductsRouteWithChildren
   '/story': typeof StoryRoute
   '/where-to-buy': typeof WhereToBuyRoute
+  '/legal/cookies': typeof LegalCookiesRoute
   '/legal/privacy': typeof LegalPrivacyRoute
   '/legal/terms': typeof LegalTermsRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -116,6 +125,7 @@ export interface FileRouteTypes {
     | '/products'
     | '/story'
     | '/where-to-buy'
+    | '/legal/cookies'
     | '/legal/privacy'
     | '/legal/terms'
     | '/products/$slug'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/for-business'
     | '/story'
     | '/where-to-buy'
+    | '/legal/cookies'
     | '/legal/privacy'
     | '/legal/terms'
     | '/products/$slug'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/products'
     | '/story'
     | '/where-to-buy'
+    | '/legal/cookies'
     | '/legal/privacy'
     | '/legal/terms'
     | '/products/$slug'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   ProductsRoute: typeof ProductsRouteWithChildren
   StoryRoute: typeof StoryRoute
   WhereToBuyRoute: typeof WhereToBuyRoute
+  LegalCookiesRoute: typeof LegalCookiesRoute
   LegalPrivacyRoute: typeof LegalPrivacyRoute
   LegalTermsRoute: typeof LegalTermsRoute
 }
@@ -198,6 +211,13 @@ declare module '@tanstack/react-router' {
       path: '/where-to-buy'
       fullPath: '/where-to-buy'
       preLoaderRoute: typeof WhereToBuyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal/cookies': {
+      id: '/legal/cookies'
+      path: '/legal/cookies'
+      fullPath: '/legal/cookies'
+      preLoaderRoute: typeof LegalCookiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/legal/privacy': {
@@ -252,9 +272,20 @@ const rootRouteChildren: RootRouteChildren = {
   ProductsRoute: ProductsRouteWithChildren,
   StoryRoute: StoryRoute,
   WhereToBuyRoute: WhereToBuyRoute,
+  LegalCookiesRoute: LegalCookiesRoute,
   LegalPrivacyRoute: LegalPrivacyRoute,
   LegalTermsRoute: LegalTermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
