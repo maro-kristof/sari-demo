@@ -78,9 +78,9 @@ export const products: Product[] = [
     bottleImage: bottleWhite.url,
     bottleAlt:
       "Bottle of Sari White with a sage green label and gold script, on a dark background",
-    sceneImage: flatWhite.url,
+    sceneImage: flatRed.url,
     sceneAlt:
-      "Bottle of Sari White laid on a plate surrounded by apple, ginger and green herbs",
+      "Bottle of Sari Red laid on a plate with sour cherries, figs and dark fruit",
     metaDescription:
       "Sari White: fresh, herbal and gently spiced non alcoholic sparkling alternative to wine. 23 kcal per 100 ml, dry, 0% alcohol.",
   },
