@@ -4,7 +4,7 @@
  */
 
 import heroIce from "@/assets/hero-ice.jpg.asset.json";
-import tableDinner from "@/assets/table-dinner.jpg.asset.json";
+import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
 import portraitGlasses from "@/assets/portrait-glasses.jpg.asset.json";
 import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
 import cases from "@/assets/cases.jpg.asset.json";
