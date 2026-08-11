@@ -44,12 +44,17 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/20 to-ink/70" />
         <div className="relative flex h-full items-end pb-20 md:pb-28">
           <Container size="wide">
-            <HandwrittenText
-              as="h1"
-              className="block max-w-[14ch] text-5xl text-cream md:text-7xl lg:text-8xl"
-            >
-              {home.hero.tagline}
-            </HandwrittenText>
+          <img
+            src={images.wordmark}
+            alt=""
+            className="mb-8 h-28 w-auto md:h-40 lg:h-48"
+          />
+          <HandwrittenText
+            as="h1"
+            className="block max-w-[14ch] text-5xl text-cream md:text-7xl lg:text-8xl"
+          >
+            {home.hero.tagline}
+          </HandwrittenText>
             <div className="mt-10 flex items-center gap-8">
               <Link
                 to="/products"

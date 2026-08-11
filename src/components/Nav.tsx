@@ -37,7 +37,7 @@ export function Nav() {
             src={images.wordmark}
             alt={brand.wordmarkAlt}
             className={cn(
-              "h-8 w-auto md:h-9",
+              "h-10 w-auto md:h-12",
               solid && "invert-100 brightness-0",
             )}
           />
