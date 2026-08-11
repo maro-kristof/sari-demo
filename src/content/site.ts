@@ -116,26 +116,26 @@ export const home = {
     imageAlt: "Sari Red being poured into a wine glass at a table",
   },
   audience: {
-    eyebrow: "Who Sari is for",
+    eyebrow: "When Sari fits",
     columns: [
       {
-        title: "Lifestyle segment",
-        body: "People who love ritual drinking, hosting, fine dining and building a moment around the table.",
+        title: "The long evening",
+        body: "When the table is set, the conversation is flowing and you want to stay present until the end.",
       },
       {
-        title: "No wine consumers",
-        body: "People who do not drink alcohol, or not right now, and still want complexity in the glass.",
+        title: "The mindful pause",
+        body: "For nights when alcohol is not the right choice, but water feels too thin for the occasion.",
       },
       {
-        title: "Gastro and hospitality",
-        body: "Fine dining, wine bars, hotels, business meetings, premium retail, events and weddings.",
+        title: "The pairing",
+        body: "When the food deserves something structured, complex and grown-up in the glass.",
       },
       {
-        title: "Athletes and longevity",
-        body: "People looking for a low calorie, clean drink with no alcohol, sugar or additives.",
+        title: "The generous host",
+        body: "So guests who are not drinking still have something worth raising a glass to.",
       },
     ],
-    closing: "And everyone who finds their own way to it.",
+    closing: "Sari is for the moment, not the label.",
   },
   b2bStrip: {
     headline: "New category. New occasion.",
