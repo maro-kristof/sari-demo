@@ -135,7 +135,7 @@ export const home = {
         body: "So guests who are not drinking still have something worth raising a glass to.",
       },
     ],
-    closing: "Sari brings wine ritual,\nwithout alcohol",
+    closing: "Sari is for the curious\u00a0and those not willing to compromise.",
     closingAttribution: "Sarah, co-author of Sari",
   },
   b2bStrip: {
