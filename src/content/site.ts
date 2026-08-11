@@ -135,7 +135,7 @@ export const home = {
         body: "So guests who are not drinking still have something worth raising a glass to.",
       },
     ],
-    closing: "Sari brings wine ritual, without alcohol",
+    closing: "Sari brings wine ritual,\nwithout alcohol",
   },
   b2bStrip: {
     headline: "New category. New occasion.",
