@@ -136,7 +136,7 @@ export const home = {
       },
     ],
     closing: "Sari brings wine ritual,\nwithout alcohol",
-  },
+    closingAttribution: "Sarah, co-author of Sari",
   b2bStrip: {
     headline: "New category. New occasion.",
     body: "A premium non alcoholic listing that lifts the whole wine list.",

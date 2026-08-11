@@ -213,7 +213,9 @@ function Index() {
             ))}
           </div>
           <div className="mt-20">
-            <PullQuote>{home.audience.closing}</PullQuote>
+            <PullQuote attribution={home.audience.closingAttribution}>
+              {home.audience.closing}
+            </PullQuote>
           </div>
         </Container>
       </SectionCream>
