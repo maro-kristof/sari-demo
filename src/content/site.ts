@@ -14,7 +14,7 @@ import wordmark from "@/assets/wordmark.png.asset.json";
 export const images = {
   wordmark: wordmark.url,
   hero: heroIce.url,
-  tableDinner: tableDinner.url,
+  tableDinner: trayGlasses.url,
   portraitGlasses: portraitGlasses.url,
   vineyardGlass: vineyardGlass.url,
   cases: cases.url,
