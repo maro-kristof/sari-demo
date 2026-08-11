@@ -47,7 +47,7 @@ function Index() {
           <img
             src={images.wordmark}
             alt=""
-            className="mb-8 h-28 w-auto -ml-3 md:-ml-5 md:h-40 lg:h-48"
+            className="mb-8 h-28 w-auto -ml-5 md:-ml-8 md:h-40 lg:h-48"
           />
           <HandwrittenText
             as="h1"
