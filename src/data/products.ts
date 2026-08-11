@@ -37,7 +37,7 @@ export type Product = {
 };
 
 const SHARED_TAGLINE =
-  "Premium non alcoholic alternative to wine, made by winemakers from botanicals and fruit.";
+  "Premium non-alcoholic wine alternative, made by winemakers from botanicals and fruits.";
 
 export const products: Product[] = [
   {
