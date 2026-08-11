@@ -4,7 +4,7 @@
  */
 
 import heroIce from "@/assets/hero-ice.jpg.asset.json";
-import tableDinner from "@/assets/table-dinner.jpg.asset.json";
+import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
 import portraitGlasses from "@/assets/portrait-glasses.jpg.asset.json";
 import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
 import cases from "@/assets/cases.jpg.asset.json";
@@ -14,7 +14,7 @@ import wordmark from "@/assets/wordmark.png.asset.json";
 export const images = {
   wordmark: wordmark.url,
   hero: heroIce.url,
-  tableDinner: tableDinner.url,
+  tableDinner: trayGlasses.url,
   portraitGlasses: portraitGlasses.url,
   vineyardGlass: vineyardGlass.url,
   cases: cases.url,
@@ -65,7 +65,7 @@ export const home = {
     headline:
       "The world is not moving toward abstinence. It is moving toward a more conscious way of drinking.",
     imageAlt:
-      "A hand raising a glass of Sari at a laid summer table with fresh vegetables",
+      "Hands carrying a silver tray with glasses of Sari White, Rosé and Red and a bottle",
     blocks: [
       {
         title: "Less but better",

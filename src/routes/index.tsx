@@ -108,7 +108,7 @@ function Index() {
                 src={images.tableDinner}
                 alt={home.shift.imageAlt}
                 loading="lazy"
-                className="aspect-4/3 w-full object-cover"
+                className="aspect-3/4 w-full object-cover"
               />
             </Reveal>
           </div>
