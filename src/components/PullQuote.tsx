@@ -1,7 +1,13 @@
 import { HandwrittenText } from "./HandwrittenText";
 import { Reveal } from "./Reveal";
 
-export function PullQuote({ children }: { children: string }) {
+export function PullQuote({
+  children,
+  attribution,
+}: {
+  children: string;
+  attribution?: string;
+}) {
   return (
     <Reveal className="mx-auto max-w-[24ch] text-center">
       <blockquote>
@@ -11,6 +17,11 @@ export function PullQuote({ children }: { children: string }) {
         >
           {children}
         </HandwrittenText>
+        {attribution && (
+          <p className="mt-6 text-sm tracking-wide text-muted-foreground">
+            {attribution}
+          </p>
+        )}
       </blockquote>
     </Reveal>
   );
