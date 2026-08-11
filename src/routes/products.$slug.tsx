@@ -120,6 +120,17 @@ function ProductPage() {
               ))}
             </ul>
 
+            <Reveal className="mt-10">
+              <a
+                href={productPage.buyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-ink px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-ink/85 focus-visible:outline-offset-4"
+              >
+                {productPage.buyCta}
+              </a>
+            </Reveal>
+
             <div className="mt-16 space-y-14">
               <Block label={productPage.tastingLabel} accent={accent}>
                 <p>{product.tastingNote}</p>
