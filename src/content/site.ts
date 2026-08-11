@@ -65,7 +65,7 @@ export const home = {
     headline:
       "The world is not moving toward abstinence. It is moving toward a more conscious way of drinking.",
     imageAlt:
-      "A hand raising a glass of Sari at a laid summer table with fresh vegetables",
+      "Hands carrying a silver tray with glasses of Sari White, Rosé and Red and a bottle",
     blocks: [
       {
         title: "Less but better",
