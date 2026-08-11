@@ -172,9 +172,9 @@ export const products: Product[] = [
     bottleImage: bottleRed.url,
     bottleAlt:
       "Bottle of Sari Red with a crimson label and gold script, on a dark background",
-    sceneImage: flatRed.url,
+    sceneImage: bottleRed.url,
     sceneAlt:
-      "Bottle of Sari Red laid on a plate with sour cherries, figs and dark fruit",
+      "Bottle of Sari Red with a crimson label and gold script, on a dark background",
     metaDescription:
       "Sari Red: dark fruit, structured and gently tannic non alcoholic sparkling alternative to wine. 24 kcal per 100 ml, dry, 0% alcohol.",
   },
