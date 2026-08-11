@@ -55,7 +55,7 @@ export const home = {
     scrollCue: "Scroll",
   },
   intro:
-    "A non alcoholic alternative to wine, made by winemakers from botanicals and fruit.",
+    "A non-alcoholic wine alternative, made by winemakers from botanicals and fruits.",
   productsSection: {
     eyebrow: "Three expressions",
     cta: "View product",
