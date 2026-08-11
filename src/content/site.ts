@@ -177,6 +177,8 @@ export const productPage = {
   occasionLabel: "Recommended occasion",
   servingLabel: "Serving and storage",
   wineListLabel: "Suggested wine list naming",
+  buyCta: "Buy Sari",
+  buyUrl: "https://www.vinotajna.sk/product-category/nealko/",
   prev: "Previous",
   next: "Next",
 };
