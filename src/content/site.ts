@@ -135,7 +135,7 @@ export const home = {
         body: "So guests who are not drinking still have something worth raising a glass to.",
       },
     ],
-    closing: "Sari is for the moment, not the label.",
+    closing: "Sari is for the table, not the type.",
   },
   b2bStrip: {
     headline: "New category. New occasion.",
