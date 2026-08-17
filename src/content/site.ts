@@ -198,16 +198,23 @@ export const productPage = {
 export const story = {
   metaTitle: "Our story — Sari by Tajna Vineyards & Winery",
   metaDescription:
-    "Tajna Vineyards & Winery on why winemakers made a non alcoholic alternative to wine: the philosophy of taste behind Sari.",
+    "Sarah Demešová and the Demeš family on why a Slovak winemaking family created Sari, a premium non alcoholic alternative to wine.",
   eyebrow: "Our story",
-  title: "Winemakers, by trade and by instinct",
-  lead: "Tajna Vineyards & Winery has always treated innovation and flexibility as part of its craft. Non and low alcohol is a natural extension of that, not a detour.",
+  title: "It started at our own table",
+  lead: "Sari was not a response to a growing global category. It began with a question inside one winemaking family: what would winemakers themselves genuinely want to drink when they are not drinking wine?",
   sections: [
     {
-      title: "A winery that reads the table",
+      title: "A daughter of a winemaking family",
       body: [
-        "We are winemakers. Our philosophy has always included innovation and flexibility, so following how people actually drink today was never a compromise.",
-        "The low and no alcohol category grows at double digits while the premium non alcoholic segment is still barely served. That gap is where Sari sits: a drink for a guest who wants everything wine offers, minus the alcohol.",
+        "Sarah Demešová grew up between the cellar and the dining table, and holds the WSET Level 2 Award in Wines. For her, the idea behind Sari was never a market opportunity first. It was personal.",
+        "Over time came a simple realisation: not every special moment needs alcohol. Yet without it, what is left on the table is usually water, a soft drink or something far too sweet.",
+      ],
+    },
+    {
+      title: "Two generations and a technologist",
+      body: [
+        "Its development brought together two generations of the Demeš family and winemaker and technologist Eva Slížová, working the way they would on any traditional wine programme — but built around fruit, fermentation, verjuice, teas and botanicals.",
+        "The brief was strict: complexity, structure and a gastronomic character worthy of the glass it is served in. Nothing that tastes like a compromise.",
       ],
     },
     {
@@ -219,10 +226,37 @@ export const story = {
       ],
     },
   ],
+  personalQuote:
+    "I grew up in a winemaking family, and wine has never been only about alcohol for me. I love the entire culture around it: celebrations, long dinners, a beautifully set table and conversations with friends.",
+  personalQuoteBody:
+    "I love sparkling wine and Champagne, and I'll happily open a bottle to celebrate even the smallest win, or simply the end of a long day.",
+  personalQuoteAttribution: "Sarah Demešová, co-author of Sari",
+  peopleEyebrow: "The people behind Sari",
+  people: [
+    {
+      name: "Sarah Demešová",
+      role: "Co-author of Sari · WSET Level 2 Award in Wines",
+      body: "Grew up in a Slovak winemaking family. Brought the idea, the taste brief and the belief that the ritual matters as much as what is in the glass.",
+      imageAlt: "Portrait of Sarah Demešová, co-author of Sari",
+    },
+    {
+      name: "The Demeš family",
+      role: "Tajna Vineyards & Winery",
+      body: "Two generations of winemakers whose philosophy has always included innovation and flexibility — non and low alcohol is an extension of that craft, not a detour.",
+      imageAlt: "The Demeš family at Tajna Vineyards & Winery",
+    },
+    {
+      name: "Eva Slížová",
+      role: "Winemaker and technologist",
+      body: "Led the development, translating winemaking technique into fruit, fermentation, verjuice, teas and botanicals.",
+      imageAlt: "Eva Slížová, winemaker and technologist behind Sari",
+    },
+  ],
   quote: "Sari is a gastronomic drink that deserves the same place at the table as wine.",
   imageAlt: "A glass of Sari Red held up against the vineyard",
   secondaryImageAlt: "Cases of Sari being stacked at the winery",
 };
+
 
 export const forBusiness = {
   metaTitle: "For restaurants, hotels and retail — Sari",
