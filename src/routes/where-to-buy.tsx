@@ -56,7 +56,7 @@ function WhereToBuyPage() {
                   )}
                 </span>
                 <span className="text-muted-foreground">
-                  {s.city}, {s.country}
+                  {s.city}{s.country ? `, ${s.country}` : ""}
                 </span>
                 <span className="eyebrow shrink-0 text-gold">{s.type}</span>
               </Reveal>

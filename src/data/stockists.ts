@@ -9,8 +9,8 @@ export type Stockist = {
 export const stockists: Stockist[] = [
   {
     name: "Tajna Vineyards & Winery",
-    city: "Vráble",
-    country: "Slovakia",
+    city: "Vráble, Slovakia and on vinotajna.sk",
+    country: "",
     type: "Retail",
     url: "https://www.vinotajna.sk/product-category/sari/",
   },
