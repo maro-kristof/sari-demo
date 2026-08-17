@@ -60,7 +60,7 @@ export const products: Product[] = [
       { label: "Bottles per case", value: "6" },
     ],
     ingredients:
-      "Water, apple, grape, ginger, verjuice from unripe grapes, tartaric acid, salt, chamomile, yarrow, thyme, hops, lemongrass.",
+      "Water, apple, grape, ginger, verjuice from unripe grapes, salt, chamomile, yarrow, thyme, hops, lemongrass.",
     pairing: [
       "Pike perch",
       "Young courgette",
@@ -105,7 +105,7 @@ export const products: Product[] = [
       { label: "Bottles per case", value: "6" },
     ],
     ingredients:
-      "Water, apple, grape, raspberry, rhubarb, verjuice from unripe grapes, tartaric acid, salt, hibiscus, rosehip, lemon balm, basil, rosemary.",
+      "Water, apple, grape, raspberry, rhubarb, verjuice from unripe grapes, salt, hibiscus, rosehip, lemon balm, basil, rosemary.",
     pairing: [
       "Poultry",
       "Salmon",
