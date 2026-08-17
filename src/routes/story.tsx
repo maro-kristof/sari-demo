@@ -19,6 +19,9 @@ export const Route = createFileRoute("/story")({
   component: StoryPage,
 });
 
+const peopleImages = [images.portraitGlasses, images.cases, images.pourRed];
+
+
 function StoryPage() {
   return (
     <>
@@ -50,6 +53,22 @@ function StoryPage() {
 
       <SectionCream>
         <Container size="wide">
+          <Reveal className="mx-auto max-w-[60ch] text-center">
+            <p className="display-md text-balance">
+              “{story.personalQuote}”
+            </p>
+            <p className="measure mx-auto mt-6 text-lg text-muted-foreground">
+              {story.personalQuoteBody}
+            </p>
+            <p className="eyebrow mt-8 text-gold">
+              {story.personalQuoteAttribution}
+            </p>
+          </Reveal>
+        </Container>
+      </SectionCream>
+
+      <SectionCream>
+        <Container size="wide">
           <div className="space-y-20">
             {story.sections.map((s) => (
               <Reveal key={s.title} className="grid gap-8 lg:grid-cols-[1fr_1.6fr]">
@@ -64,6 +83,30 @@ function StoryPage() {
           </div>
         </Container>
       </SectionCream>
+
+      <SectionCream>
+        <Container size="wide">
+          <Reveal>
+            <Eyebrow>{story.peopleEyebrow}</Eyebrow>
+          </Reveal>
+          <ul className="mt-12 grid gap-12 md:grid-cols-3">
+            {story.people.map((p, i) => (
+              <Reveal as="li" key={p.name} delay={i * 100}>
+                <img
+                  src={peopleImages[i]}
+                  alt={p.imageAlt}
+                  loading="lazy"
+                  className="aspect-[4/5] w-full object-cover"
+                />
+                <h3 className="mt-6 text-xl">{p.name}</h3>
+                <p className="eyebrow mt-2 text-gold">{p.role}</p>
+                <p className="mt-4 text-muted-foreground">{p.body}</p>
+              </Reveal>
+            ))}
+          </ul>
+        </Container>
+      </SectionCream>
+
 
       <SectionBlack>
         <Container size="wide">
