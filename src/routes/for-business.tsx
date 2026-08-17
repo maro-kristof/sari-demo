@@ -5,6 +5,15 @@ import { Container, SectionBlack, SectionCream, Eyebrow } from "@/components/Sec
 import { Reveal } from "@/components/Reveal";
 import { SpecTable } from "@/components/SpecTable";
 import { InquiryForm } from "@/components/InquiryForm";
+import sheetWhite from "@/assets/tasting-White.pdf.asset.json";
+import sheetRose from "@/assets/tasting-Rose.pdf.asset.json";
+import sheetRed from "@/assets/tasting-Red.pdf.asset.json";
+
+const sheetUrls: Record<string, string> = {
+  white: sheetWhite.url,
+  rose: sheetRose.url,
+  red: sheetRed.url,
+};
 
 export const Route = createFileRoute("/for-business")({
   head: () => ({
@@ -87,16 +96,18 @@ function ForBusinessPage() {
                     className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-b py-4"
                   >
                     <span className="truncate text-lg">{p.name}</span>
-                    <Link
-                      to="/products/$slug"
-                      params={{ slug: p.slug }}
+                    <a
+                      href={sheetUrls[p.slug]}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="eyebrow shrink-0 border-b border-gold pb-1 text-gold"
                     >
                       {forBusiness.sheetCta}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
+
             </Reveal>
           </div>
         </Container>
