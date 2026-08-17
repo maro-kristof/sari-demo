@@ -23,8 +23,8 @@ export const stockists: Stockist[] = [
   },
   {
     name: "Selected restaurants & wine bars",
-    city: "Bratislava",
-    country: "Slovakia",
+    city: "Europe",
+    country: "",
     type: "Wine bar",
   },
   {
