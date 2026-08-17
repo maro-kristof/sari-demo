@@ -19,6 +19,9 @@ export const Route = createFileRoute("/story")({
   component: StoryPage,
 });
 
+const peopleImages = [images.portraitGlasses, images.cases, images.pourRed];
+
+
 function StoryPage() {
   return (
     <>
