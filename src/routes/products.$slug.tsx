@@ -11,6 +11,15 @@ import { HandwrittenText } from "@/components/HandwrittenText";
 import { SpecTable } from "@/components/SpecTable";
 import { Reveal } from "@/components/Reveal";
 import { BenefitIcon } from "@/components/BenefitIcon";
+import sheetWhite from "@/assets/tasting-White.pdf.asset.json";
+import sheetRose from "@/assets/tasting-Rose.pdf.asset.json";
+import sheetRed from "@/assets/tasting-Red.pdf.asset.json";
+
+const sheetUrls: Record<string, string> = {
+  white: sheetWhite.url,
+  rose: sheetRose.url,
+  red: sheetRed.url,
+};
 
 export const Route = createFileRoute("/products/$slug")({
   loader: ({ params }) => {
