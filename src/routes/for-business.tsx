@@ -39,7 +39,7 @@ function ForBusinessPage() {
             <Reveal delay={100}>
               <img
                 src={images.cases}
-                alt="Cases of Sari stacked at the winery"
+                alt="Three bottles of Sari on a sunlit table with glasses and fresh vegetables"
                 className="aspect-4/3 w-full object-cover"
               />
             </Reveal>
