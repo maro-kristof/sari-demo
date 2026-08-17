@@ -3,7 +3,7 @@
  * later by duplicating this object behind an i18n lookup.
  */
 
-import heroIce from "@/assets/hero-ice.jpg.asset.json";
+import heroPourRose from "@/assets/hero-pour-rose.jpg.asset.json";
 import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
 import portraitGlasses from "@/assets/portrait-glasses.jpg.asset.json";
 import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
