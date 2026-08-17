@@ -27,10 +27,4 @@ export const stockists: Stockist[] = [
     country: "",
     type: "Wine bar",
   },
-  {
-    name: "Selected hotels",
-    city: "Nitra region",
-    country: "Slovakia",
-    type: "Hotel",
-  },
 ];
