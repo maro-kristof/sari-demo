@@ -262,7 +262,7 @@ export const forBusiness = {
   sheetsLabel: "Product sheets",
   sheetsBody:
     "Tasting notes, specification and suggested wine list naming for each expression. Ask us for the print ready PDF sheets.",
-  sheetCta: "View details",
+  sheetCta: "Download sheet",
   formLabel: "Wholesale inquiry",
   formIntro:
     "Tell us about your venue and we will come back with pricing, samples and delivery options.",
