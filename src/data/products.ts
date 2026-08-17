@@ -49,7 +49,7 @@ export const products: Product[] = [
     descriptors: ["Fresh", "Herbal", "Gently spiced"],
     descriptorLine: "Fresh · herbal · gently spiced",
     tastingNote:
-      "Fresh, lively apple and grape with a pronounced accent of ginger and lemongrass. Verjuice brings clean acidity, complemented by delicate herbal and floral notes of chamomile, wild thyme, yarrow and hops, finishing slightly bitter and dry.",
+      "Fresh, lively apple and grape with a pronounced accent of ginger and lemongrass. Verjuice brings clean acidity, complemented by delicate herbal and floral notes of chamomile, wild thyme, yarrow and hops, finishing slightly salty and dry ",
     spec: [
       { label: "Energy / 100 ml", value: "23 kcal" },
       { label: "Residual sugar", value: "5.4 g · dry" },
