@@ -39,7 +39,7 @@ function WhereToBuyPage() {
                 as="li"
                 key={`${s.name}-${s.city}`}
                 delay={i * 50}
-                className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-4 border-b py-6 sm:grid-cols-[1.4fr_1fr_auto]"
+                className="grid grid-cols-1 gap-2 border-b py-6 sm:grid-cols-[1.4fr_1fr_auto] sm:items-baseline sm:gap-4"
               >
                 <span className="text-xl">
                   {s.url ? (
