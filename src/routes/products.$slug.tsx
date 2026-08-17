@@ -10,6 +10,7 @@ import { Container, Eyebrow } from "@/components/Section";
 import { HandwrittenText } from "@/components/HandwrittenText";
 import { SpecTable } from "@/components/SpecTable";
 import { Reveal } from "@/components/Reveal";
+import { BenefitIcon } from "@/components/BenefitIcon";
 
 export const Route = createFileRoute("/products/$slug")({
   loader: ({ params }) => {
@@ -162,10 +163,16 @@ function ProductPage() {
 
               <Reveal>
                 <div className="border p-6" style={{ borderColor: accent }}>
-                  <Eyebrow className="mb-3" style={{ color: accent }}>
-                    {productPage.wineListLabel}
+                  <Eyebrow className="mb-6" style={{ color: accent }}>
+                    {productPage.benefitsLabel}
                   </Eyebrow>
-                  <p className="text-lg">{product.wineListName}</p>
+                  <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3">
+                    {productPage.benefits.map((label, i) => (
+                      <li key={label}>
+                        <BenefitIcon label={label} delay={i * 60} />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </Reveal>
             </div>

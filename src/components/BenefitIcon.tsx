@@ -31,7 +31,7 @@ const icons: Record<string, ReactNode> = {
       <line x1="12" y1="32" x2="36" y2="16" />
     </>
   ),
-  "Premium image": (
+  "Premium flavour": (
     <>
       <path d="M24 9l4.6 9.6 10.4 1.5-7.5 7.4 1.8 10.5L24 33l-9.3 5 1.8-10.5-7.5-7.4 10.4-1.5Z" />
     </>
