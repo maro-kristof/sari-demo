@@ -14,6 +14,8 @@ import whiteBottleHands from "@/assets/white-bottle-hands.jpg.asset.json";
 import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
 import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
 import tableDinner from "@/assets/table-dinner.jpg.asset.json";
+import roseHands from "@/assets/rose-hands.jpg.asset.json";
+import roseTray from "@/assets/rose-tray.jpg.asset.json";
 import pourRed from "@/assets/pour-red.jpg.asset.json";
 import flatRedScene from "@/assets/flat-red.jpg.asset.json";
 
@@ -145,8 +147,8 @@ export const products: Product[] = [
     sceneAlt:
       "Bottle of Sari Rosé laid on a plate with raspberries, rhubarb and fresh herbs",
     gallery: [
-      { src: vineyardGlass.url, alt: "A glass of Sari Rosé held in the vineyard" },
-      { src: tableDinner.url, alt: "Sari poured at a long table set for dinner" },
+      { src: roseHands.url, alt: "Hands holding a bottle of Sari Rosé against a tiled wall with a soft shadow" },
+      { src: roseTray.url, alt: "Bottle of Sari Rosé on a silver tray with raspberries, roses and fresh herbs" },
     ],
     metaDescription:
       "Sari Rosé: fruity, floral and herbal non alcoholic sparkling alternative to wine. 34 kcal per 100 ml, off dry, 0% alcohol.",
