@@ -6,7 +6,6 @@
 import bottleWhite from "@/assets/bottle-white.png.asset.json";
 import bottleRose from "@/assets/bottle-rose.png.asset.json";
 import bottleRed from "@/assets/bottle-red.png.asset.json";
-import flatWhite from "@/assets/flat-white.jpg.asset.json";
 import flatRose from "@/assets/flat-rose.jpg.asset.json";
 import flatRed from "@/assets/flat-red.jpg.asset.json";
 import sariRedFlat from "@/assets/sari-red-flat.jpg.asset.json";
