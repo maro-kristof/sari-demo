@@ -20,6 +20,10 @@ import redHands from "@/assets/red-hands.jpg.asset.json";
 import redTray from "@/assets/red-tray.jpg.asset.json";
 import pourRed from "@/assets/pour-red.jpg.asset.json";
 import flatRedScene from "@/assets/flat-red.jpg.asset.json";
+import lifeBoxes from "@/assets/sari-life-76.jpg.asset.json";
+import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
+import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
+import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
 
 export type ProductSlug = "white" | "rose" | "red";
 
