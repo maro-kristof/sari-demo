@@ -25,6 +25,6 @@ export const stockists: Stockist[] = [
     name: "Selected restaurants, wine bars & hotels\n",
     city: "Europe",
     country: "",
-    type: "Wine bar",
+    type: "HORECA\n",
   },
 ];
