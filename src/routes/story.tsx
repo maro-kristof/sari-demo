@@ -23,7 +23,7 @@ export const Route = createFileRoute("/story")({
   component: StoryPage,
 });
 
-const peopleImages = [images.portraitGlasses, images.cases, images.pourRed];
+const peopleImages = [images.portraitGlasses, images.cases];
 
 const galleryImages = [
   { src: lifeBoxes.url, alt: "Woman carrying a stack of green Sari gift boxes in the winery warehouse" },
