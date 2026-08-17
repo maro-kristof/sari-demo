@@ -3,6 +3,10 @@ import { story, images } from "@/content/site";
 import { Container, SectionBlack, SectionCream, Eyebrow } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { PullQuote } from "@/components/PullQuote";
+import lifeBoxes from "@/assets/sari-life-76.jpg.asset.json";
+import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
+import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
+import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
 
 export const Route = createFileRoute("/story")({
   head: () => ({
