@@ -87,16 +87,18 @@ function ForBusinessPage() {
                     className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-b py-4"
                   >
                     <span className="truncate text-lg">{p.name}</span>
-                    <Link
-                      to="/products/$slug"
-                      params={{ slug: p.slug }}
+                    <a
+                      href={sheetUrls[p.slug]}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="eyebrow shrink-0 border-b border-gold pb-1 text-gold"
                     >
                       {forBusiness.sheetCta}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
+
             </Reveal>
           </div>
         </Container>
