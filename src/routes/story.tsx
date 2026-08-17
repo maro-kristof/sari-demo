@@ -7,7 +7,7 @@ import lifeBoxes from "@/assets/sari-life-76.jpg.asset.json";
 import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
 import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
 import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
-import anettaRasto from "@/assets/anetta-rasto.jpg.asset.json";
+import anettaRasto from "@/assets/anetta-rasto-2.jpg.asset.json";
 
 export const Route = createFileRoute("/story")({
   head: () => ({
@@ -108,9 +108,7 @@ function StoryPage() {
                   src={peopleImages[i]}
                   alt={p.imageAlt}
                   loading="lazy"
-                  className={`aspect-[4/5] w-full object-cover ${
-                    i === 1 ? "object-[90%_center]" : ""
-                  }`}
+                  className="aspect-[4/5] w-full object-cover"
                 />
                 <h3 className="mt-6 text-xl">{p.name}</h3>
                 <p className="eyebrow mt-2 text-gold">{p.role}</p>
