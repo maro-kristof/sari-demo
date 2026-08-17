@@ -254,7 +254,7 @@ export const forBusiness = {
   logistics: [
     { label: "Format", value: "0.75 l glass bottle" },
     { label: "Case", value: "6 bottles" },
-    { label: "Shelf life", value: "Minimum one year from production" },
+    { label: "Shelf life", value: "Minimum two years from production" },
     { label: "Storage", value: "Away from frost and direct sunlight" },
     { label: "After opening", value: "Refrigerate and consume within 2 days" },
     { label: "Range", value: "White · Rosé · Red" },
