@@ -213,7 +213,7 @@ export const story = {
     {
       title: "Two generations and a technologist",
       body: [
-        "Its development brought together two generations of the Demeš family and winemaker and technologist Eva Slížová, working the way they would on any traditional wine programme — but built around fruit, fermentation, verjuice, teas and botanicals.",
+        "Its development brought together two generations of the Demeš family and winemaker and technologist Eva Slížová, thinking the way they would on any traditional wine programme — but built around fruits and botanicals.",
         "The brief was strict: complexity, structure and a gastronomic character worthy of the glass it is served in. Nothing that tastes like a compromise.",
       ],
     },
