@@ -235,7 +235,7 @@ export const forBusiness = {
   reasons: [
     {
       title: "A new premium non alcoholic category",
-      body: "Not a soft drink and not a dealcoholised wine. A category of its own, with little competitors on the shelf.",
+      body: "Not a soft drink and not a dealcoholised wine. A premium category of its own, with few competitors on the shelf.",
     },
     {
       title: "It extends wine occasions",
@@ -246,12 +246,12 @@ export const forBusiness = {
       body: "A bottle sold by the glass or by the bottle instead of a mineral water — with a wine-like ticket.",
     },
     {
-      title: "It works in gastronomy",
+      title: "Liquid gastronomy",
       body: "Acidity, gentle bitterness and structure make it pairable across the whole menu, from mussels to ragù.",
     },
     {
       title: "Distinctive packaging",
-      body: "A 0.75 l bottle with a hand drawn label that reads as wine on the table and in retail.",
+      body: "A 0.75 l bottle with a beautiful distinctive label that reads as sparkling wine on the table and in retail.",
     },
   ],
   logisticsLabel: "Format and logistics",
