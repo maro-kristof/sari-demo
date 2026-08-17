@@ -141,6 +141,21 @@ function ProductPage() {
               </a>
             </Reveal>
 
+            {product.gallery.length > 0 && (
+              <Reveal className="mt-12 grid grid-cols-2 gap-3">
+                {product.gallery.map((img) => (
+                  <figure key={img.src} className="overflow-hidden">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      className="aspect-[3/4] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                    />
+                  </figure>
+                ))}
+              </Reveal>
+            )}
+
             <div className="mt-16 space-y-14">
               <Block label={productPage.tastingLabel} accent={accent}>
                 <p>{product.tastingNote}</p>
