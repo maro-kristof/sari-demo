@@ -19,6 +19,7 @@ export const stockists: Stockist[] = [
     city: "Ships across Slovakia",
     country: "Slovakia",
     type: "Online",
+    url: "https://www.vinotajna.sk/product-category/sari/",
   },
   {
     name: "Selected restaurants & wine bars",
