@@ -10,6 +10,8 @@ import flatWhite from "@/assets/flat-white.jpg.asset.json";
 import flatRose from "@/assets/flat-rose.jpg.asset.json";
 import flatRed from "@/assets/flat-red.jpg.asset.json";
 import sariRedFlat from "@/assets/sari-red-flat.jpg.asset.json";
+import whiteTray from "@/assets/white-tray.jpg.asset.json";
+import whiteBottleHands from "@/assets/white-bottle-hands.jpg.asset.json";
 import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
 import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
 import tableDinner from "@/assets/table-dinner.jpg.asset.json";
@@ -90,8 +92,8 @@ export const products: Product[] = [
     sceneAlt:
       "Bottle of Sari Red laid on a plate with sour cherries, figs and dark fruit",
     gallery: [
-      { src: flatWhite.url, alt: "Bottle of Sari White laid on a plate with apple, fennel and green herbs" },
-      { src: trayGlasses.url, alt: "Hands carrying a tray with three glasses of Sari and a bottle" },
+      { src: whiteTray.url, alt: "Bottle of Sari White on a silver tray with grapes, apple, ginger and dried flowers" },
+      { src: whiteBottleHands.url, alt: "Hands holding a bottle of Sari White against a tiled wall" },
     ],
     metaDescription:
       "Sari White: fresh, herbal and gently spiced non alcoholic sparkling alternative to wine. 23 kcal per 100 ml, dry, 0% alcohol.",
