@@ -240,16 +240,10 @@ export const story = {
       imageAlt: "Portrait of Sarah Demešová, co-author of Sari",
     },
     {
-      name: "The Demeš family",
+      name: "Anetta and Rasťo Demeš",
       role: "Tajna Vineyards & Winery",
       body: "Two generations of winemakers whose philosophy has always included innovation and flexibility — non and low alcohol is an extension of that craft, not a detour.",
-      imageAlt: "The Demeš family at Tajna Vineyards & Winery",
-    },
-    {
-      name: "Eva Slížová",
-      role: "Winemaker and technologist",
-      body: "Led the development, translating winemaking technique into fruit, fermentation, verjuice, teas and botanicals.",
-      imageAlt: "Eva Slížová, winemaker and technologist behind Sari",
+      imageAlt: "Anetta and Rasťo Demeš at Tajna Vineyards & Winery",
     },
   ],
   quote: "Sari is a gastronomic drink that deserves the same place at the table as wine.",
