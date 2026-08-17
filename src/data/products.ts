@@ -149,8 +149,8 @@ export const products: Product[] = [
     sceneAlt:
       "Bottle of Sari Rosé laid on a plate with raspberries, rhubarb and fresh herbs",
     gallery: [
-      { src: roseHands.url, alt: "Hands holding a bottle of Sari Rosé against a tiled wall with a soft shadow" },
       { src: roseTray.url, alt: "Bottle of Sari Rosé on a silver tray with raspberries, roses and fresh herbs" },
+      { src: roseHands.url, alt: "Hands holding a bottle of Sari Rosé against a tiled wall with a soft shadow" },
     ],
     metaDescription:
       "Sari Rosé: fruity, floral and herbal non alcoholic sparkling alternative to wine. 34 kcal per 100 ml, off dry, 0% alcohol.",
