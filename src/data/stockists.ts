@@ -2,16 +2,16 @@ export type Stockist = {
   name: string;
   city: string;
   country: string;
-  type: "Restaurant" | "Wine bar" | "Hotel" | "Retail" | "Online";
+  type: string;
   url?: string;
 };
 
 export const stockists: Stockist[] = [
   {
     name: "Tajna Vineyards & Winery",
-    city: "Vráble, Slovakia and on vinotajna.sk",
+    city: "Wine Shop Vráble\nLevická 743/59, 952 01 Vráble, Slovakia",
     country: "",
-    type: "Retail",
+    type: "WINE SHOP",
     url: "https://www.vinotajna.sk/product-category/sari/",
   },
   {
