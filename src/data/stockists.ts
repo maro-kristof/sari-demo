@@ -12,7 +12,7 @@ export const stockists: Stockist[] = [
     city: "Vráble",
     country: "Slovakia",
     type: "Retail",
-    url: "https://www.instagram.com/sari_sparkling/",
+    url: "https://www.vinotajna.sk/product-category/sari/",
   },
   {
     name: "Sari Online",
