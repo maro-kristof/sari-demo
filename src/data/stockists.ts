@@ -22,7 +22,7 @@ export const stockists: Stockist[] = [
     url: "https://www.vinotajna.sk/product-category/sari/",
   },
   {
-    name: "Selected restaurants & wine bars",
+    name: "Selected restaurant, wine bars & hotels",
     city: "Europe",
     country: "",
     type: "Wine bar",
