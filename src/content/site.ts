@@ -189,7 +189,7 @@ export const productPage = {
   buyUrl: "https://www.vinotajna.sk/product-category/nealko/",
   sheetLabel: "Tasting sheet",
   sheetBody:
-    "A one page PDF with the tasting note, specification and serving guidance for this expression — ready to print or share with your team.",
+    "A one-page PDF with the tasting notes, specifications, and serving guidance for this expression — ready to download.",
   sheetCta: "Download PDF",
   prev: "Previous",
   next: "Next",
