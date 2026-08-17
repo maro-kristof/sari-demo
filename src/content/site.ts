@@ -3,7 +3,7 @@
  * later by duplicating this object behind an i18n lookup.
  */
 
-import heroPourRose from "@/assets/hero-pour-rose.jpg.asset.json";
+import heroIce from "@/assets/hero-ice.jpg.asset.json";
 import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
 import portraitGlasses from "@/assets/portrait-glasses.jpg.asset.json";
 import vineyardGlass from "@/assets/sari-nocrop-4.jpg.asset.json";
@@ -13,7 +13,7 @@ import wordmark from "@/assets/wordmark.png.asset.json";
 
 export const images = {
   wordmark: wordmark.url,
-  hero: heroPourRose.url,
+  hero: heroIce.url,
   tableDinner: trayGlasses.url,
   portraitGlasses: portraitGlasses.url,
   vineyardGlass: vineyardGlass.url,
@@ -49,7 +49,7 @@ export const nav = {
 export const home = {
   hero: {
     imageAlt:
-      "Sari Rosé being poured into a wine glass held on a silver tray outdoors",
+      "Bottles of Sari chilling in a tub of ice with fresh fruit and herbs",
     tagline: "Wine culture without the alcohol.",
     cta: "Discover Sari",
     scrollCue: "Scroll",
