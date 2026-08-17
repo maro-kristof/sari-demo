@@ -108,7 +108,9 @@ function StoryPage() {
                   src={peopleImages[i]}
                   alt={p.imageAlt}
                   loading="lazy"
-                  className="aspect-[4/5] w-full object-cover"
+                  className={`aspect-[4/5] w-full object-cover ${
+                    i === 1 ? "object-[90%_center]" : ""
+                  }`}
                 />
                 <h3 className="mt-6 text-xl">{p.name}</h3>
                 <p className="eyebrow mt-2 text-gold">{p.role}</p>
