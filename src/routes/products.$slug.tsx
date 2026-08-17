@@ -175,6 +175,19 @@ function ProductPage() {
                   </ul>
                 </div>
               </Reveal>
+
+              <Block label={productPage.sheetLabel} accent={accent}>
+                <p>{productPage.sheetBody}</p>
+                <a
+                  href={sheetUrls[product.slug]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="eyebrow mt-5 inline-block border-b pb-1"
+                  style={{ borderColor: accent, color: accent }}
+                >
+                  {productPage.sheetCta}
+                </a>
+              </Block>
             </div>
 
             <nav
