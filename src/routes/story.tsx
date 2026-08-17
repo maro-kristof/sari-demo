@@ -21,6 +21,13 @@ export const Route = createFileRoute("/story")({
 
 const peopleImages = [images.portraitGlasses, images.cases, images.pourRed];
 
+const galleryImages = [
+  { src: lifeBoxes.url, alt: "Woman carrying a stack of green Sari gift boxes in the winery warehouse" },
+  { src: lifeToast.url, alt: "Man raising a glass of Sari beside stacked Sari boxes in the warehouse" },
+  { src: lifeTwoGlasses.url, alt: "Woman drinking Sari while balancing a second glass above her head" },
+  { src: lifeSip.url, alt: "Man tasting a glass of Sari against a white brick wall" },
+];
+
 
 function StoryPage() {
   return (
