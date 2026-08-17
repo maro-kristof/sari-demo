@@ -101,6 +101,7 @@ export const products: Product[] = [
     gallery: [
       { src: whiteTray.url, alt: "Bottle of Sari White on a silver tray with grapes, apple, ginger and dried flowers" },
       { src: whiteBottleHands.url, alt: "Hands holding a bottle of Sari White against a tiled wall" },
+      { src: lifeBoxes.url, alt: "Woman carrying a stack of green Sari gift boxes in the winery warehouse" },
     ],
     metaDescription:
       "Sari White: fresh, herbal and gently spiced non alcoholic sparkling alternative to wine. 23 kcal per 100 ml, dry, 0% alcohol.",
@@ -155,6 +156,7 @@ export const products: Product[] = [
     gallery: [
       { src: roseTray.url, alt: "Bottle of Sari Rosé on a silver tray with raspberries, roses and fresh herbs" },
       { src: roseHands.url, alt: "Hands holding a bottle of Sari Rosé against a tiled wall with a soft shadow" },
+      { src: lifeToast.url, alt: "Man raising a glass of Sari Rosé beside stacked Sari boxes in the warehouse" },
     ],
     metaDescription:
       "Sari Rosé: fruity, floral and herbal non alcoholic sparkling alternative to wine. 34 kcal per 100 ml, off dry, 0% alcohol.",
@@ -203,6 +205,8 @@ export const products: Product[] = [
     gallery: [
       { src: redTray.url, alt: "Bottle of Sari Red on a silver tray with plums, grapes, cherries and beetroot" },
       { src: redHands.url, alt: "Hands holding a bottle of Sari Red against a tiled wall with a soft shadow" },
+      { src: lifeTwoGlasses.url, alt: "Woman drinking Sari Red while balancing a second glass above her head" },
+      { src: lifeSip.url, alt: "Man tasting a glass of Sari Red against a white brick wall" },
     ],
     metaDescription:
       "Sari Red: dark fruit, structured and gently tannic non alcoholic sparkling alternative to wine. 24 kcal per 100 ml, dry, 0% alcohol.",
