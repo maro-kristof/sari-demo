@@ -261,7 +261,7 @@ export const forBusiness = {
   ],
   sheetsLabel: "Product sheets",
   sheetsBody:
-    "Tasting notes, specification and suggested wine list naming for each expression. Ask us for the print ready PDF sheets.",
+    "Tasting notes, specification and suggested wine list naming for each expression. Download\u00a0the print ready PDF sheets below.",
   sheetCta: "Download sheet",
   formLabel: "Wholesale inquiry",
   formIntro:
