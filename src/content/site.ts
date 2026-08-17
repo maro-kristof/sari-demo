@@ -49,7 +49,7 @@ export const nav = {
 export const home = {
   hero: {
     imageAlt:
-      "Bottles of Sari chilling in a tub of ice with fresh fruit and herbs",
+      "Sari Rosé being poured into a wine glass held on a silver tray outdoors",
     tagline: "Wine culture without the alcohol.",
     cta: "Discover Sari",
     scrollCue: "Scroll",
