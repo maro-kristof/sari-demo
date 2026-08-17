@@ -109,7 +109,7 @@ function StoryPage() {
                   alt={p.imageAlt}
                   loading="lazy"
                   className={`aspect-[4/5] w-full object-cover ${
-                    i === 1 ? "object-[60%_center]" : ""
+                    i === 1 ? "object-[75%_center]" : ""
                   }`}
                 />
                 <h3 className="mt-6 text-xl">{p.name}</h3>
