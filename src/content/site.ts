@@ -231,7 +231,7 @@ export const forBusiness = {
   reasons: [
     {
       title: "A new premium non alcoholic category",
-      body: "Not a soft drink and not a dealcoholised wine. A category of its own, with no obvious competitor on the shelf.",
+      body: "Not a soft drink and not a dealcoholised wine. A category of its own, with little competitors on the shelf.",
     },
     {
       title: "It extends wine occasions",
