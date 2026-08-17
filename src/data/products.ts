@@ -195,8 +195,8 @@ export const products: Product[] = [
     sceneAlt:
       "Bottle of Sari Red with a crimson label on a plate with grapes, beetroot, plums and dark fruit",
     gallery: [
-      { src: flatRedScene.url, alt: "Bottle of Sari Red laid on a plate with sour cherries, figs and dark fruit" },
-      { src: pourRed.url, alt: "Sari Red being poured into a wine glass" },
+      { src: redHands.url, alt: "Hands holding a bottle of Sari Red against a tiled wall with a soft shadow" },
+      { src: redTray.url, alt: "Bottle of Sari Red on a silver tray with plums, grapes, cherries and beetroot" },
     ],
     metaDescription:
       "Sari Red: dark fruit, structured and gently tannic non alcoholic sparkling alternative to wine. 24 kcal per 100 ml, dry, 0% alcohol.",
