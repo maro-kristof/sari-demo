@@ -7,7 +7,7 @@ import heroIce from "@/assets/hero-ice.jpg.asset.json";
 import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
 import portraitGlasses from "@/assets/portrait-glasses.jpg.asset.json";
 import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
-import cases from "@/assets/cases.jpg.asset.json";
+import cases from "@/assets/sari-table-cover.webp.asset.json";
 import pourRed from "@/assets/pour-red.jpg.asset.json";
 import wordmark from "@/assets/wordmark.png.asset.json";
 
