@@ -135,7 +135,7 @@ export const home = {
         body: "So guests who are not drinking still have something worth raising a glass to.",
       },
     ],
-    closing: "Sari is for the curious\nand those not willing\nto compromise.",
+    closing: "Sari is for the curious and those not willing to compromise.",
     closingAttribution: "Sarah, co-author of Sari",
   },
   b2bStrip: {

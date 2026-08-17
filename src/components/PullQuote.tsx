@@ -9,7 +9,7 @@ export function PullQuote({
   attribution?: string;
 }) {
   return (
-    <Reveal className="mx-auto max-w-[32ch] text-center">
+    <Reveal className="mx-auto max-w-[44ch] text-center md:max-w-[64ch]">
       <blockquote>
         <HandwrittenText
           as="p"
