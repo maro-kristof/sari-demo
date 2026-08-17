@@ -3,6 +3,10 @@ import { story, images } from "@/content/site";
 import { Container, SectionBlack, SectionCream, Eyebrow } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { PullQuote } from "@/components/PullQuote";
+import lifeBoxes from "@/assets/sari-life-76.jpg.asset.json";
+import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
+import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
+import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
 
 export const Route = createFileRoute("/story")({
   head: () => ({
@@ -20,6 +24,13 @@ export const Route = createFileRoute("/story")({
 });
 
 const peopleImages = [images.portraitGlasses, images.cases, images.pourRed];
+
+const galleryImages = [
+  { src: lifeBoxes.url, alt: "Woman carrying a stack of green Sari gift boxes in the winery warehouse" },
+  { src: lifeToast.url, alt: "Man raising a glass of Sari beside stacked Sari boxes in the warehouse" },
+  { src: lifeTwoGlasses.url, alt: "Woman drinking Sari while balancing a second glass above her head" },
+  { src: lifeSip.url, alt: "Man tasting a glass of Sari against a white brick wall" },
+];
 
 
 function StoryPage() {
@@ -107,6 +118,26 @@ function StoryPage() {
         </Container>
       </SectionCream>
 
+
+      <SectionCream>
+        <Container size="wide">
+          <Reveal>
+            <Eyebrow>Behind the scenes</Eyebrow>
+          </Reveal>
+          <ul className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+            {galleryImages.map((img, i) => (
+              <Reveal as="li" key={img.src} delay={i * 80} className="overflow-hidden">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="aspect-[3/4] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                />
+              </Reveal>
+            ))}
+          </ul>
+        </Container>
+      </SectionCream>
 
       <SectionBlack>
         <Container size="wide">
