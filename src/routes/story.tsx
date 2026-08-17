@@ -7,6 +7,7 @@ import lifeBoxes from "@/assets/sari-life-76.jpg.asset.json";
 import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
 import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
 import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
+import anettaRasto from "@/assets/anetta-rasto.jpg.asset.json";
 
 export const Route = createFileRoute("/story")({
   head: () => ({
@@ -23,7 +24,7 @@ export const Route = createFileRoute("/story")({
   component: StoryPage,
 });
 
-const peopleImages = [images.portraitGlasses, images.cases];
+const peopleImages = [images.portraitGlasses, anettaRasto.url];
 
 const galleryImages = [
   { src: lifeBoxes.url, alt: "Woman carrying a stack of green Sari gift boxes in the winery warehouse" },
