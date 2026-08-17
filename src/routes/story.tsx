@@ -7,7 +7,7 @@ import lifeBoxes from "@/assets/sari-life-76.jpg.asset.json";
 import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
 import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
 import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
-import anettaRasto from "@/assets/anetta-rasto.jpg.asset.json";
+import anettaRasto from "@/assets/anetta-rasto-2.jpg.asset.json";
 
 export const Route = createFileRoute("/story")({
   head: () => ({
