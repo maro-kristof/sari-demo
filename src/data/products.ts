@@ -10,6 +10,11 @@ import flatWhite from "@/assets/flat-white.jpg.asset.json";
 import flatRose from "@/assets/flat-rose.jpg.asset.json";
 import flatRed from "@/assets/flat-red.jpg.asset.json";
 import sariRedFlat from "@/assets/sari-red-flat.jpg.asset.json";
+import trayGlasses from "@/assets/tray-glasses.jpg.asset.json";
+import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
+import tableDinner from "@/assets/table-dinner.jpg.asset.json";
+import pourRed from "@/assets/pour-red.jpg.asset.json";
+import flatRedScene from "@/assets/flat-red.jpg.asset.json";
 
 export type ProductSlug = "white" | "rose" | "red";
 
@@ -33,6 +38,8 @@ export type Product = {
   bottleAlt: string;
   sceneImage: string;
   sceneAlt: string;
+  /** Secondary and tertiary photos shown in the product gallery. */
+  gallery: { src: string; alt: string }[];
   metaDescription: string;
 };
 
@@ -82,6 +89,10 @@ export const products: Product[] = [
     sceneImage: flatRed.url,
     sceneAlt:
       "Bottle of Sari Red laid on a plate with sour cherries, figs and dark fruit",
+    gallery: [
+      { src: flatWhite.url, alt: "Bottle of Sari White laid on a plate with apple, fennel and green herbs" },
+      { src: trayGlasses.url, alt: "Hands carrying a tray with three glasses of Sari and a bottle" },
+    ],
     metaDescription:
       "Sari White: fresh, herbal and gently spiced non alcoholic sparkling alternative to wine. 23 kcal per 100 ml, dry, 0% alcohol.",
   },
@@ -132,6 +143,10 @@ export const products: Product[] = [
     sceneImage: flatRose.url,
     sceneAlt:
       "Bottle of Sari Rosé laid on a plate with raspberries, rhubarb and fresh herbs",
+    gallery: [
+      { src: vineyardGlass.url, alt: "A glass of Sari Rosé held in the vineyard" },
+      { src: tableDinner.url, alt: "Sari poured at a long table set for dinner" },
+    ],
     metaDescription:
       "Sari Rosé: fruity, floral and herbal non alcoholic sparkling alternative to wine. 34 kcal per 100 ml, off dry, 0% alcohol.",
   },
@@ -176,6 +191,10 @@ export const products: Product[] = [
     sceneImage: sariRedFlat.url,
     sceneAlt:
       "Bottle of Sari Red with a crimson label on a plate with grapes, beetroot, plums and dark fruit",
+    gallery: [
+      { src: flatRedScene.url, alt: "Bottle of Sari Red laid on a plate with sour cherries, figs and dark fruit" },
+      { src: pourRed.url, alt: "Sari Red being poured into a wine glass" },
+    ],
     metaDescription:
       "Sari Red: dark fruit, structured and gently tannic non alcoholic sparkling alternative to wine. 24 kcal per 100 ml, dry, 0% alcohol.",
   },
