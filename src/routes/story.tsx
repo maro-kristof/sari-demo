@@ -108,6 +108,26 @@ function StoryPage() {
       </SectionCream>
 
 
+      <SectionCream>
+        <Container size="wide">
+          <Reveal>
+            <Eyebrow>Behind the scenes</Eyebrow>
+          </Reveal>
+          <ul className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+            {galleryImages.map((img, i) => (
+              <Reveal as="li" key={img.src} delay={i * 80} className="overflow-hidden">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="aspect-[3/4] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                />
+              </Reveal>
+            ))}
+          </ul>
+        </Container>
+      </SectionCream>
+
       <SectionBlack>
         <Container size="wide">
           <PullQuote>{story.quote}</PullQuote>
