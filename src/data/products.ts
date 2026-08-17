@@ -3,9 +3,9 @@
  * Pages render from this file — never hardcode product copy in components.
  */
 
-import bottleWhite from "@/assets/bottle-white-v2.webp.asset.json";
-import bottleRose from "@/assets/bottle-rose-v2.webp.asset.json";
-import bottleRed from "@/assets/bottle-red-v2.webp.asset.json";
+import bottleWhite from "@/assets/bottle-white-v2.png.asset.json";
+import bottleRose from "@/assets/bottle-rose-v2.png.asset.json";
+import bottleRed from "@/assets/bottle-red-v2.png.asset.json";
 import flatRose from "@/assets/flat-rose.jpg.asset.json";
 import flatRed from "@/assets/flat-red.jpg.asset.json";
 import sariRedFlat from "@/assets/sari-red-flat.jpg.asset.json";
