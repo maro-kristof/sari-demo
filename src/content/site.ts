@@ -187,6 +187,10 @@ export const productPage = {
   ],
   buyCta: "Buy Sari",
   buyUrl: "https://www.vinotajna.sk/product-category/nealko/",
+  sheetLabel: "Tasting sheet",
+  sheetBody:
+    "A one page PDF with the tasting note, specification and serving guidance for this expression — ready to print or share with your team.",
+  sheetCta: "Download PDF",
   prev: "Previous",
   next: "Next",
 };
