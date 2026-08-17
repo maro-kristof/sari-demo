@@ -16,6 +16,8 @@ import vineyardGlass from "@/assets/vineyard-glass.jpg.asset.json";
 import tableDinner from "@/assets/table-dinner.jpg.asset.json";
 import roseHands from "@/assets/rose-hands.jpg.asset.json";
 import roseTray from "@/assets/rose-tray.jpg.asset.json";
+import redHands from "@/assets/red-hands.jpg.asset.json";
+import redTray from "@/assets/red-tray.jpg.asset.json";
 import pourRed from "@/assets/pour-red.jpg.asset.json";
 import flatRedScene from "@/assets/flat-red.jpg.asset.json";
 
