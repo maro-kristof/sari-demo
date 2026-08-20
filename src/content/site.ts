@@ -211,6 +211,13 @@ export const story = {
       ],
     },
     {
+      title: "LVMH and Veuve Clicquot",
+      body: [
+        "Sarah spent years working with LVMH at Veuve Clicquot, where she was immersed in the world of Champagne. That experience shaped her understanding of celebration, ritual and what a glass can mean at the table.",
+        "It also deepened a passion she had carried since childhood: the belief that great drinks are about people, moments and culture — not just alcohol.",
+      ],
+    },
+    {
       title: "Two generations and a technologist",
       body: [
         "Its development brought together two generations of the Demeš family and winemaker and technologist Eva Slížová, thinking the way they would on any traditional wine programme — but built around fruits and botanicals.",
