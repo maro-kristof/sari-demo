@@ -237,7 +237,7 @@ export const story = {
   people: [
     {
       name: "Sarah Demešová",
-      role: "CO-AUTHOR OF SARI",
+      role: "SARI",
       body: "Grew up in a Slovak winemaking family. Brought the idea, the taste brief and the belief that the ritual matters as much as what is in the glass.",
       imageAlt: "Portrait of Sarah Demešová, co-author of Sari",
     },
