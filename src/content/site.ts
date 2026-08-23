@@ -208,12 +208,7 @@ export const story = {
       body: [
         "Sarah Demešová grew up between the cellar and the dining table, and holds the WSET Level 2 Award in Wines. For her, the idea behind Sari was never a market opportunity first. It was personal.",
         "Over time came a simple realisation: not every special moment needs alcohol. Yet without it, what is left on the table is usually water, a soft drink or something far too sweet.",
-      ],
-    },
-    {
-      title: "LVMH and Veuve Clicquot",
-      body: [
-        "Sarah spent years working with LVMH at Veuve Clicquot, where she was immersed in the world of Champagne. That experience shaped her understanding of celebration, ritual and what a glass can mean at the table.",
+        "Sarah worked with LVMH at Veuve Clicquot, where she was immersed in the world of Champagne. That experience shaped her understanding of celebration, ritual and what a glass can mean at the table.",
         "It also deepened a passion she had carried since childhood: the belief that great drinks are about people, moments and culture — not just alcohol.",
       ],
     },
