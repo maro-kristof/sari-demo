@@ -17,8 +17,8 @@ export const Route = createFileRoute("/products/")({
       { property: "og:description", content: productsIndex.metaDescription },
       { property: "og:type", content: "website" },
       { property: "og:url", content: absoluteUrl("/products") },
-      { property: "og:image", content: absoluteUrl(products[0].sceneImage) },
-      { name: "twitter:image", content: absoluteUrl(products[0].sceneImage) },
+      { property: "og:image", content: ogImage },
+      { name: "twitter:image", content: ogImage },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/products") }],
     scripts: [
