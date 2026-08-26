@@ -55,6 +55,9 @@ export const Route = createFileRoute("/")({
             description:
               "Sari is a premium non alcoholic sparkling alternative to wine, made by winemakers from botanicals, fruit and verjuice. White, Rosé and Red.",
             image: images.hero,
+            imageCaption: home.hero.imageAlt,
+            imageDescription:
+              "Bottles of Sari White, Rosé and Red non-alcoholic sparkling chilling in a tub of ice with fresh fruit and herbs.",
             imageDimensions: imageEntry(images.hero),
           }),
         ),
