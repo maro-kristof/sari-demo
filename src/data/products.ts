@@ -41,10 +41,13 @@ export type Product = {
   wineListName: string;
   bottleImage: string;
   bottleAlt: string;
+  /** Longer description used in ImageObject structured data. */
+  bottleDesc: string;
   sceneImage: string;
   sceneAlt: string;
+  sceneDesc: string;
   /** Secondary and tertiary photos shown in the product gallery. */
-  gallery: { src: string; alt: string }[];
+  gallery: { src: string; alt: string; desc: string }[];
   metaDescription: string;
 };
 
@@ -90,13 +93,25 @@ export const products: Product[] = [
       "Sari White, non alcoholic sparkling wine alternative, Tajna Vineyards & Winery",
     bottleImage: bottleWhite.url,
     bottleAlt:
-      "Bottle of Sari White with a sage green label and gold script, on a dark background",
+      "Bottle of Sari White, a non-alcoholic sparkling wine alternative, with a sage green label and gold Sari script on a dark background",
+    bottleDesc:
+      "Sari White non-alcoholic sparkling wine alternative in a 0.75 l bottle with a sage green label and gold script — made from apple, grape, verjuice, ginger, chamomile, thyme and lemongrass, 0% alcohol.",
     sceneImage: flatRed.url,
     sceneAlt:
-      "Bottle of Sari Red laid on a plate with sour cherries, figs and dark fruit",
+      "Bottle of Sari Red with a crimson label laid on a plate surrounded by sour cherries, figs, beetroot and dark grapes",
+    sceneDesc:
+      "Flat-lay photo of a Sari Red bottle on a plate styled with sour cherries, figs, beetroot and dark grapes — the fruits and botanicals behind its flavour.",
     gallery: [
-      { src: whiteTray.url, alt: "Bottle of Sari White on a silver tray with grapes, apple, ginger and dried flowers" },
-      { src: whiteBottleHands.url, alt: "Hands holding a bottle of Sari White against a tiled wall" },
+      {
+        src: whiteTray.url,
+        alt: "Bottle of Sari White on a silver tray styled with green grapes, apple, fresh ginger and dried botanicals",
+        desc: "Sari White bottle served on a silver tray with its key ingredients: green grapes, apple, ginger and dried flowers and herbs.",
+      },
+      {
+        src: whiteBottleHands.url,
+        alt: "Hands holding a chilled bottle of Sari White sparkling against a white tiled wall",
+        desc: "Hands presenting a bottle of Sari White non-alcoholic sparkling in front of a white tiled wall.",
+      },
     ],
     metaDescription:
       "Sari White: fresh, herbal and gently spiced non alcoholic sparkling alternative to wine. 23 kcal per 100 ml, dry, 0% alcohol.",
@@ -144,13 +159,25 @@ export const products: Product[] = [
       "Sari Rosé, non alcoholic sparkling wine alternative, Tajna Vineyards & Winery",
     bottleImage: bottleRose.url,
     bottleAlt:
-      "Bottle of Sari Rosé with a dusty pink label and gold script, on a dark background",
+      "Bottle of Sari Rosé, a non-alcoholic sparkling wine alternative, with a dusty pink label and gold Sari script on a dark background",
+    bottleDesc:
+      "Sari Rosé non-alcoholic sparkling wine alternative in a 0.75 l bottle with a dusty pink label and gold script — made from apple, grape, raspberry, rhubarb, hibiscus and rosehip, 0% alcohol.",
     sceneImage: flatRose.url,
     sceneAlt:
-      "Bottle of Sari Rosé laid on a plate with raspberries, rhubarb and fresh herbs",
+      "Bottle of Sari Rosé laid on a plate surrounded by fresh raspberries, rhubarb stalks and herbs",
+    sceneDesc:
+      "Flat-lay photo of a Sari Rosé bottle on a plate styled with raspberries, rhubarb and fresh herbs — the fruits and botanicals behind its flavour.",
     gallery: [
-      { src: roseTray.url, alt: "Bottle of Sari Rosé on a silver tray with raspberries, roses and fresh herbs" },
-      { src: roseHands.url, alt: "Hands holding a bottle of Sari Rosé against a tiled wall with a soft shadow" },
+      {
+        src: roseTray.url,
+        alt: "Bottle of Sari Rosé on a silver tray styled with fresh raspberries, roses and herbs",
+        desc: "Sari Rosé bottle served on a silver tray with its key ingredients: fresh raspberries, roses and aromatic herbs.",
+      },
+      {
+        src: roseHands.url,
+        alt: "Hands holding a chilled bottle of Sari Rosé sparkling against a tiled wall with a soft shadow",
+        desc: "Hands presenting a bottle of Sari Rosé non-alcoholic sparkling in front of a tiled wall in soft light.",
+      },
     ],
     metaDescription:
       "Sari Rosé: fruity, floral and herbal non alcoholic sparkling alternative to wine. 34 kcal per 100 ml, off dry, 0% alcohol.",
@@ -192,13 +219,25 @@ export const products: Product[] = [
       "Sari Red, non alcoholic sparkling wine alternative, Tajna Vineyards & Winery",
     bottleImage: bottleRed.url,
     bottleAlt:
-      "Bottle of Sari Red with a crimson label and gold script, on a dark background",
+      "Bottle of Sari Red, a non-alcoholic sparkling wine alternative, with a crimson label and gold Sari script on a dark background",
+    bottleDesc:
+      "Sari Red non-alcoholic sparkling wine alternative in a 0.75 l bottle with a crimson label and gold script — made from red grape, sour cherry, aronia, fig, blackcurrant and oak tannin, 0% alcohol.",
     sceneImage: sariRedFlat.url,
     sceneAlt:
-      "Bottle of Sari Red with a crimson label on a plate with grapes, beetroot, plums and dark fruit",
+      "Bottle of Sari Red with a crimson label laid on a plate surrounded by grapes, beetroot, plums and dark fruit",
+    sceneDesc:
+      "Flat-lay photo of a Sari Red bottle on a plate styled with grapes, beetroot, plums and dark fruit — the ingredients behind its flavour.",
     gallery: [
-      { src: redTray.url, alt: "Bottle of Sari Red on a silver tray with plums, grapes, cherries and beetroot" },
-      { src: redHands.url, alt: "Hands holding a bottle of Sari Red against a tiled wall with a soft shadow" },
+      {
+        src: redTray.url,
+        alt: "Bottle of Sari Red on a silver tray styled with plums, dark grapes, sour cherries and beetroot",
+        desc: "Sari Red bottle served on a silver tray with its key ingredients: plums, dark grapes, sour cherries and beetroot.",
+      },
+      {
+        src: redHands.url,
+        alt: "Hands holding a chilled bottle of Sari Red sparkling against a tiled wall with a soft shadow",
+        desc: "Hands presenting a bottle of Sari Red non-alcoholic sparkling in front of a tiled wall in soft light.",
+      },
     ],
     metaDescription:
       "Sari Red: dark fruit, structured and gently tannic non alcoholic sparkling alternative to wine. 24 kcal per 100 ml, dry, 0% alcohol.",

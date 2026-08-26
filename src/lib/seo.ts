@@ -26,6 +26,7 @@ export function imageObjectLd(
   src: string,
   caption?: string,
   dimensions?: { w: number; h: number },
+  description?: string,
 ) {
   return {
     "@context": "https://schema.org",
@@ -33,7 +34,8 @@ export function imageObjectLd(
     contentUrl: absoluteUrl(src),
     url: absoluteUrl(src),
     ...(dimensions ? { width: dimensions.w, height: dimensions.h } : {}),
-    ...(caption ? { caption } : {}),
+    ...(caption ? { caption, name: caption } : {}),
+    ...(description ? { description } : {}),
   };
 }
 
@@ -43,6 +45,8 @@ export function webPageLd(opts: {
   name: string;
   description: string;
   image?: string;
+  imageCaption?: string;
+  imageDescription?: string;
   imageDimensions?: { w: number; h: number } | undefined;
 }) {
   return {
@@ -53,7 +57,14 @@ export function webPageLd(opts: {
     name: opts.name,
     description: opts.description,
     ...(opts.image
-      ? { primaryImageOfPage: imageObjectLd(opts.image, opts.name, opts.imageDimensions) }
+      ? {
+          primaryImageOfPage: imageObjectLd(
+            opts.image,
+            opts.imageCaption ?? opts.name,
+            opts.imageDimensions,
+            opts.imageDescription,
+          ),
+        }
       : {}),
   };
 }

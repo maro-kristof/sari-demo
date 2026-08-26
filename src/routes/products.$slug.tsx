@@ -64,10 +64,10 @@ export const Route = createFileRoute("/products/$slug")({
             description: p.metaDescription,
             url,
             image: [
-              imageObjectLd(p.bottleImage, p.bottleAlt, imageEntry(p.bottleImage)),
-              imageObjectLd(p.sceneImage, p.sceneAlt, imageEntry(p.sceneImage)),
+              imageObjectLd(p.bottleImage, p.bottleAlt, imageEntry(p.bottleImage), p.bottleDesc),
+              imageObjectLd(p.sceneImage, p.sceneAlt, imageEntry(p.sceneImage), p.sceneDesc),
               ...p.gallery.map((g) =>
-                imageObjectLd(g.src, g.alt, imageEntry(g.src)),
+                imageObjectLd(g.src, g.alt, imageEntry(g.src), g.desc),
               ),
             ],
             sku: `sari-${p.slug}`,

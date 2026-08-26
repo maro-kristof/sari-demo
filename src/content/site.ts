@@ -239,18 +239,26 @@ export const story = {
       name: "Sarah Demešová",
       role: "SARI",
       body: "Grew up in a Slovak winemaking family. Brought the idea, the taste brief and the belief that the ritual matters as much as what is in the glass.",
-      imageAlt: "Portrait of Sarah Demešová, co-author of Sari",
+      imageAlt:
+        "Sarah Demešová, co-author of Sari, holding two glasses of Sari sparkling in front of a white tiled wall",
     },
     {
       name: "Anetta and Rasťo Demeš",
       role: "Tajna Vineyards & Winery",
       body: "Two generations of winemakers whose philosophy has always included innovation and flexibility — non and low alcohol is an extension of that craft, not a detour.",
-      imageAlt: "Anetta and Rasťo Demeš at Tajna Vineyards & Winery",
+      imageAlt:
+        "Anetta and Rasťo Demeš, winemakers of Tajna Vineyards & Winery, celebrating among guests",
     },
   ],
   quote: "Sari is a gastronomic drink that deserves the same place at the table as wine.",
-  imageAlt: "A glass of Sari Red held up against the vineyard",
-  secondaryImageAlt: "Cases of Sari being stacked at the winery",
+  imageAlt:
+    "A glass of Sari Red sparkling held up against the sunlit rows of the Tajna family vineyard in Slovakia",
+  imageDesc:
+    "A hand holding a glass of Sari Red non-alcoholic sparkling against the vineyard rows of Tajna Vineyards & Winery, where Sari is made.",
+  secondaryImageAlt:
+    "Sari bottles and gift boxes arranged on a table at the Tajna winery in Vráble",
+  secondaryImageDesc:
+    "Bottles of Sari White, Rosé and Red with branded boxes on a table at the Tajna winery in Vráble, Slovakia.",
 };
 
 
