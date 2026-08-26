@@ -45,6 +45,8 @@ export function webPageLd(opts: {
   name: string;
   description: string;
   image?: string;
+  imageCaption?: string;
+  imageDescription?: string;
   imageDimensions?: { w: number; h: number } | undefined;
 }) {
   return {
@@ -55,7 +57,14 @@ export function webPageLd(opts: {
     name: opts.name,
     description: opts.description,
     ...(opts.image
-      ? { primaryImageOfPage: imageObjectLd(opts.image, opts.name, opts.imageDimensions) }
+      ? {
+          primaryImageOfPage: imageObjectLd(
+            opts.image,
+            opts.imageCaption ?? opts.name,
+            opts.imageDimensions,
+            opts.imageDescription,
+          ),
+        }
       : {}),
   };
 }
