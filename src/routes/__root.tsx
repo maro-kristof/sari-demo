@@ -13,6 +13,8 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
+import { images } from "../content/site";
+import { SITE_URL, absoluteUrl } from "../lib/seo";
 
 function NotFoundComponent() {
   return (
