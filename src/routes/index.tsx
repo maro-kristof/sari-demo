@@ -7,7 +7,7 @@ import { Reveal } from "@/components/Reveal";
 import { ProductCard } from "@/components/ProductCard";
 import { BenefitIcon } from "@/components/BenefitIcon";
 import { PullQuote } from "@/components/PullQuote";
-import { absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, webPageLd } from "@/lib/seo";
 import { OptimizedImage, imageEntry } from "@/components/OptimizedImage";
 
 export const Route = createFileRoute("/")({
@@ -45,6 +45,19 @@ export const Route = createFileRoute("/")({
             url: absoluteUrl(`/products/${p.slug}`),
           })),
         }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          webPageLd({
+            path: "/",
+            name: "Sari — wine culture without the alcohol",
+            description:
+              "Sari is a premium non alcoholic sparkling alternative to wine, made by winemakers from botanicals, fruit and verjuice. White, Rosé and Red.",
+            image: images.hero,
+            imageDimensions: imageEntry(images.hero),
+          }),
+        ),
       },
     ],
   }),

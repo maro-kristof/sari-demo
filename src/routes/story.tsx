@@ -41,7 +41,11 @@ export const Route = createFileRoute("/story")({
           "@type": "Article",
           headline: story.metaTitle,
           description: story.metaDescription,
-          image: absoluteUrl(images.vineyardGlass),
+          image: imageObjectLd(
+            images.vineyardGlass,
+            story.imageAlt,
+            imageEntry(images.vineyardGlass),
+          ),
           mainEntityOfPage: absoluteUrl("/story"),
           author: {
             "@type": "Person",

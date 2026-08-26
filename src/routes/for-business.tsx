@@ -9,6 +9,7 @@ import sheetWhite from "@/assets/tasting-White.pdf.asset.json";
 import sheetRose from "@/assets/tasting-Rose.pdf.asset.json";
 import sheetRed from "@/assets/tasting-Red.pdf.asset.json";
 import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 const sheetUrls: Record<string, string> = {
   white: sheetWhite.url,
@@ -60,9 +61,10 @@ function ForBusinessPage() {
               </p>
             </Reveal>
             <Reveal delay={100}>
-              <img
+              <OptimizedImage
                 src={images.cases}
                 alt="Three bottles of Sari on a sunlit table with glasses and fresh vegetables"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="aspect-4/3 w-full object-cover"
               />
             </Reveal>
