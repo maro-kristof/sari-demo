@@ -26,7 +26,7 @@ export const brand = {
   legalName: "TAJNA s.r.o.",
   lockup: "Sari by Tajna Vineyards & Winery",
   address: "Levická 743, 952 01 Vráble, Slovakia",
-  email: "info@sarisparkling.com",
+  email: "hello@sarisparkling.com",
   phone: "+421 903 000 000",
   instagram: "https://www.instagram.com/sari_sparkling/",
   instagramHandle: "@sari_sparkling",
@@ -395,7 +395,7 @@ export const legal = {
       },
       {
         heading: "Your rights",
-        body: "You can ask for access, correction, deletion or portability of your data, and you can withdraw consent at any time. Write to info@sarisparkling.com.",
+        body: "You can ask for access, correction, deletion or portability of your data, and you can withdraw consent at any time. Write to hello@sarisparkling.com.",
       },
     ],
   },
