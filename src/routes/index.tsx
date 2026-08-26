@@ -24,9 +24,27 @@ export const Route = createFileRoute("/")({
           "A premium non alcoholic sparkling alternative to wine, made by winemakers in Slovakia.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: absoluteUrl("/") },
+      { property: "og:image", content: absoluteUrl(images.hero) },
+      { name: "twitter:image", content: absoluteUrl(images.hero) },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Sari non alcoholic sparkling range",
+          itemListElement: products.map((p, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: p.name,
+            url: absoluteUrl(`/products/${p.slug}`),
+          })),
+        }),
+      },
+    ],
   }),
   component: Index,
 });
