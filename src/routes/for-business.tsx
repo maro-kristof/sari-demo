@@ -25,6 +25,8 @@ export const Route = createFileRoute("/for-business")({
       { property: "og:description", content: forBusiness.metaDescription },
       { property: "og:type", content: "website" },
       { property: "og:url", content: absoluteUrl("/for-business") },
+      { property: "og:image", content: absoluteUrl(images.cases) },
+      { name: "twitter:image", content: absoluteUrl(images.cases) },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/for-business") }],
     scripts: [

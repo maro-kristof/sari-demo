@@ -19,6 +19,8 @@ export const Route = createFileRoute("/story")({
       { property: "og:description", content: story.metaDescription },
       { property: "og:type", content: "article" },
       { property: "og:url", content: absoluteUrl("/story") },
+      { property: "og:image", content: absoluteUrl(images.vineyardGlass) },
+      { name: "twitter:image", content: absoluteUrl(images.vineyardGlass) },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/story") }],
     scripts: [
