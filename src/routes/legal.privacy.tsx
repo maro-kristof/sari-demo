@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { legal } from "@/content/site";
 import { LegalPage } from "@/components/LegalPage";
+import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/legal/privacy")({
   head: () => ({
@@ -17,9 +18,9 @@ export const Route = createFileRoute("/legal/privacy")({
         content: "How Sari handles your personal data.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/legal/privacy" },
+      { property: "og:url", content: absoluteUrl("/legal/privacy") },
     ],
-    links: [{ rel: "canonical", href: "/legal/privacy" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/legal/privacy") }],
   }),
   component: () => <LegalPage doc={legal.privacy} />,
 });

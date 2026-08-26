@@ -7,6 +7,7 @@ import { Reveal } from "@/components/Reveal";
 import { ProductCard } from "@/components/ProductCard";
 import { BenefitIcon } from "@/components/BenefitIcon";
 import { PullQuote } from "@/components/PullQuote";
+import { absoluteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
