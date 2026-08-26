@@ -41,11 +41,33 @@ export const Route = createFileRoute("/story")({
           "@type": "Article",
           headline: story.metaTitle,
           description: story.metaDescription,
-          image: imageObjectLd(
-            images.vineyardGlass,
-            story.imageAlt,
-            imageEntry(images.vineyardGlass),
-          ),
+          image: [
+            imageObjectLd(
+              images.vineyardGlass,
+              story.imageAlt,
+              imageEntry(images.vineyardGlass),
+              story.imageDesc,
+            ),
+            imageObjectLd(
+              images.cases,
+              story.secondaryImageAlt,
+              imageEntry(images.cases),
+              story.secondaryImageDesc,
+            ),
+            imageObjectLd(
+              images.portraitGlasses,
+              story.people[0]!.imageAlt,
+              imageEntry(images.portraitGlasses),
+            ),
+            imageObjectLd(
+              anettaRasto.url,
+              story.people[1]!.imageAlt,
+              imageEntry(anettaRasto.url),
+            ),
+            ...galleryImages.map((g) =>
+              imageObjectLd(g.src, g.alt, imageEntry(g.src)),
+            ),
+          ],
           mainEntityOfPage: absoluteUrl("/story"),
           author: {
             "@type": "Person",
