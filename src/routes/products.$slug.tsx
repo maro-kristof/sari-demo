@@ -6,7 +6,8 @@ import {
   PASTEURISED_NOTE,
 } from "@/data/products";
 import { productPage } from "@/content/site";
-import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
+import { absoluteUrl, breadcrumbLd, imageObjectLd } from "@/lib/seo";
+import { OptimizedImage, imageEntry } from "@/components/OptimizedImage";
 import { Container, Eyebrow } from "@/components/Section";
 import { HandwrittenText } from "@/components/HandwrittenText";
 import { SpecTable } from "@/components/SpecTable";
@@ -63,9 +64,11 @@ export const Route = createFileRoute("/products/$slug")({
             description: p.metaDescription,
             url,
             image: [
-              absoluteUrl(p.bottleImage),
-              image,
-              ...p.gallery.map((g) => absoluteUrl(g.src)),
+              imageObjectLd(p.bottleImage, p.bottleAlt, imageEntry(p.bottleImage)),
+              imageObjectLd(p.sceneImage, p.sceneAlt, imageEntry(p.sceneImage)),
+              ...p.gallery.map((g) =>
+                imageObjectLd(g.src, g.alt, imageEntry(g.src)),
+              ),
             ],
             sku: `sari-${p.slug}`,
             brand: { "@type": "Brand", name: "Sari" },
@@ -134,9 +137,11 @@ function ProductPage() {
         {/* Bottle */}
         <div className="bg-ink lg:sticky lg:top-0 lg:h-dvh lg:w-1/2">
           <div className="flex h-[60vh] items-center justify-center px-8 pt-24 pb-10 lg:h-full lg:pt-28">
-            <img
+            <OptimizedImage
               src={product.bottleImage}
               alt={product.bottleAlt}
+              priority
+              sizes="(min-width: 1024px) 30vw, 80vw"
               className="h-full w-auto max-w-full object-contain"
             />
           </div>
@@ -179,10 +184,10 @@ function ProductPage() {
               <Reveal className="mt-12 grid grid-cols-2 gap-3">
                 {product.gallery.map((img) => (
                   <figure key={img.src} className="overflow-hidden">
-                    <img
+                    <OptimizedImage
                       src={img.src}
                       alt={img.alt}
-                      loading="lazy"
+                      sizes="(min-width: 1024px) 25vw, 50vw"
                       className="aspect-[3/4] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                     />
                   </figure>

@@ -7,7 +7,8 @@ import { Reveal } from "@/components/Reveal";
 import { ProductCard } from "@/components/ProductCard";
 import { BenefitIcon } from "@/components/BenefitIcon";
 import { PullQuote } from "@/components/PullQuote";
-import { absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, webPageLd } from "@/lib/seo";
+import { OptimizedImage, imageEntry } from "@/components/OptimizedImage";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -45,6 +46,19 @@ export const Route = createFileRoute("/")({
           })),
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          webPageLd({
+            path: "/",
+            name: "Sari — wine culture without the alcohol",
+            description:
+              "Sari is a premium non alcoholic sparkling alternative to wine, made by winemakers from botanicals, fruit and verjuice. White, Rosé and Red.",
+            image: images.hero,
+            imageDimensions: imageEntry(images.hero),
+          }),
+        ),
+      },
     ],
   }),
   component: Index,
@@ -55,17 +69,21 @@ function Index() {
     <>
       {/* Hero */}
       <section className="relative h-dvh min-h-[600px] w-full bg-ink">
-        <img
+        <OptimizedImage
           src={images.hero}
           alt={home.hero.imageAlt}
+          priority
+          sizes="100vw"
           className="absolute inset-0 size-full object-cover opacity-85"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink/60 via-ink/20 to-ink/70" />
         <div className="relative flex h-full items-end pb-20 md:pb-28">
           <Container size="wide">
-          <img
+          <OptimizedImage
             src={images.wordmark}
             alt=""
+            priority
+            sizes="(min-width: 1024px) 384px, 224px"
             className="mb-8 h-28 w-auto -ml-5 md:-ml-8 md:h-40 lg:h-48"
           />
           <HandwrittenText
@@ -123,10 +141,10 @@ function Index() {
               </h2>
             </Reveal>
             <Reveal delay={100}>
-              <img
+              <OptimizedImage
                 src={images.tableDinner}
                 alt={home.shift.imageAlt}
-                loading="lazy"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="aspect-3/4 w-full object-cover"
               />
             </Reveal>
@@ -147,10 +165,10 @@ function Index() {
         <Container size="wide">
           <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
             <Reveal>
-              <img
+              <OptimizedImage
                 src={images.portraitGlasses}
                 alt={home.generation.imageAlt}
-                loading="lazy"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="aspect-3/4 w-full object-cover"
               />
             </Reveal>
@@ -206,10 +224,10 @@ function Index() {
               </ul>
             </Reveal>
             <Reveal delay={100}>
-              <img
+              <OptimizedImage
                 src={images.pourRed}
                 alt={home.ritual.imageAlt}
-                loading="lazy"
+                sizes="(min-width: 1024px) 55vw, 100vw"
                 className="aspect-3/4 w-full object-cover"
               />
             </Reveal>

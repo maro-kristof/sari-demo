@@ -1,0 +1,487 @@
+{
+  "/__l5e/assets-v1/eb8e4cab-5c41-40b1-8142-d4e5ebf0fc47/anetta-rasto-2.jpg": {
+    "w": 614,
+    "h": 683,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/47751e41-70fe-47d1-a59f-8f3a276638c5/anetta-rasto-2.webp",
+        "w": 614,
+        "h": 683
+      }
+    ]
+  },
+  "/__l5e/assets-v1/6f7dd25b-0eab-4ec1-9420-f0a6b905a0d7/bottle-red-v3.png": {
+    "w": 492,
+    "h": 1600,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/5a347a17-0a49-4cf8-84bf-d3c609fb7eb2/bottle-red-v3.webp",
+        "w": 492,
+        "h": 1600
+      }
+    ]
+  },
+  "/__l5e/assets-v1/f8a6fbcd-77c4-499c-acdf-3eb2632008c1/bottle-rose-v3.png": {
+    "w": 493,
+    "h": 1600,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/a064b537-031b-442d-9aad-02d037933f62/bottle-rose-v3.webp",
+        "w": 493,
+        "h": 1600
+      }
+    ]
+  },
+  "/__l5e/assets-v1/d2fea7ee-b8a4-4db3-9583-00a2dee8756f/bottle-white-v3.png": {
+    "w": 493,
+    "h": 1600,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/8bc7c739-fd3a-4229-9a4d-97e52d53e025/bottle-white-v3.webp",
+        "w": 493,
+        "h": 1600
+      }
+    ]
+  },
+  "/__l5e/assets-v1/015578bc-ed6e-41a5-b279-abd18fb88eb5/cases.jpg": {
+    "w": 956,
+    "h": 1434,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/d3d1a4a8-d90c-4d95-b57a-2af5d673c32a/cases-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/9a9e7007-1d60-4a65-a26f-17bf9734aa0b/cases.webp",
+        "w": 956,
+        "h": 1434
+      }
+    ]
+  },
+  "/__l5e/assets-v1/ce721f70-e25b-49cf-b3e8-8110dceccfc4/flat-red.jpg": {
+    "w": 615,
+    "h": 820,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/98e008ff-4421-45cc-9ad0-27d44d1b9454/flat-red.webp",
+        "w": 615,
+        "h": 820
+      }
+    ]
+  },
+  "/__l5e/assets-v1/d9de7d66-3eef-4c8a-9704-a108d0ac026e/flat-rose.jpg": {
+    "w": 615,
+    "h": 820,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/373b269c-7a0c-450f-9874-e0495c52aa37/flat-rose.webp",
+        "w": 615,
+        "h": 820
+      }
+    ]
+  },
+  "/__l5e/assets-v1/b999a086-7bf7-4d99-8721-e48dfbc43956/flat-white.jpg": {
+    "w": 615,
+    "h": 820,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/0ccca1a1-ee0f-4313-8354-e6d1a21a41a6/flat-white.webp",
+        "w": 615,
+        "h": 820
+      }
+    ]
+  },
+  "/__l5e/assets-v1/bf3d7d22-2bfa-4ec2-bdd0-cfb3a010bfc0/hero-ice.jpg": {
+    "w": 2048,
+    "h": 1365,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/596b4551-cf7f-48f0-8888-15022305b905/hero-ice-640.webp",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "url": "/__l5e/assets-v1/73bc0046-425a-44e8-90c8-117ddd0d42ae/hero-ice-1280.webp",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/de4f9a68-8992-456c-bd96-21f8d4b47817/hero-ice-1920.webp",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "/__l5e/assets-v1/0a927ed5-5e3a-4281-9424-6ed597efab9e/hero-ice.webp",
+        "w": 2048,
+        "h": 1365
+      }
+    ]
+  },
+  "/__l5e/assets-v1/b73cdd80-96a5-448c-a6fb-5cececfb2fc8/hero-pour-rose.jpg": {
+    "w": 1920,
+    "h": 1280,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/d0b419f9-961e-4030-98cd-0c9e6485d577/hero-pour-rose-640.webp",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "url": "/__l5e/assets-v1/654fad09-5b07-476e-b681-1f094a78a2a9/hero-pour-rose-1280.webp",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/acb7bf52-a5f8-4194-b7eb-40cc96b41b74/hero-pour-rose-1920.webp",
+        "w": 1920,
+        "h": 1280
+      }
+    ]
+  },
+  "/__l5e/assets-v1/8a83ae91-494d-4e82-b9e0-36eb208fe9d7/portrait-glasses.jpg": {
+    "w": 956,
+    "h": 1434,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/97ce7807-c77e-4ee1-bcc4-631f3a3139d6/portrait-glasses-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/2946bdf0-8b96-41e8-8842-5eb3a0089865/portrait-glasses.webp",
+        "w": 956,
+        "h": 1434
+      }
+    ]
+  },
+  "/__l5e/assets-v1/8f285175-3fd0-4c5b-a4e0-49ece1e22353/pour-red.jpg": {
+    "w": 2048,
+    "h": 1365,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/a82b226c-f972-4cc0-a0e7-86419b2b9ea2/pour-red-640.webp",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "url": "/__l5e/assets-v1/c82e5d96-8746-42f5-bbdd-2965ad00a1b0/pour-red-1280.webp",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/3020c0ec-061d-4262-a398-d99abeeca162/pour-red-1920.webp",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "/__l5e/assets-v1/55794b54-402c-4c15-b444-abdba1490d4e/pour-red.webp",
+        "w": 2048,
+        "h": 1365
+      }
+    ]
+  },
+  "/__l5e/assets-v1/8f24aaff-8d1b-4f67-82a5-2b924b3b526d/red-hands.jpg": {
+    "w": 1024,
+    "h": 1280,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/c145366b-97b1-4ce6-ab96-5f7cafb3ab09/red-hands-640.webp",
+        "w": 640,
+        "h": 800
+      },
+      {
+        "url": "/__l5e/assets-v1/62caa34a-58e2-40d0-abd5-555ca64ffea1/red-hands.webp",
+        "w": 1024,
+        "h": 1280
+      }
+    ]
+  },
+  "/__l5e/assets-v1/9a874aa6-9c30-4192-bce4-7336745f6edf/red-tray.jpg": {
+    "w": 768,
+    "h": 1024,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/9ae18229-25a4-4009-b20f-b9169d52ea1b/red-tray-640.webp",
+        "w": 640,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/8a720e68-de02-4370-826c-7c80d1837237/red-tray.webp",
+        "w": 768,
+        "h": 1024
+      }
+    ]
+  },
+  "/__l5e/assets-v1/a83f2b8f-a065-4539-835b-8bd62e9a6102/rose-hands.jpg": {
+    "w": 960,
+    "h": 1280,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/f1f62a6e-82c6-4fb1-a390-9d440d14891d/rose-hands-640.webp",
+        "w": 640,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/acd94a39-6b50-41a8-b20d-c8f6ffee7bdc/rose-hands.webp",
+        "w": 960,
+        "h": 1280
+      }
+    ]
+  },
+  "/__l5e/assets-v1/3017e430-11e2-4dd5-8f42-71e09379fd54/rose-tray.jpg": {
+    "w": 768,
+    "h": 1024,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/b7b4152b-8967-4307-bef7-055451a84668/rose-tray-640.webp",
+        "w": 640,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/0aced503-54a1-4ccc-bbc4-a77982f3744c/rose-tray.webp",
+        "w": 768,
+        "h": 1024
+      }
+    ]
+  },
+  "/__l5e/assets-v1/8f957cb0-3127-4985-8a24-3980cdd21e68/sari-life-76.jpg": {
+    "w": 1280,
+    "h": 1920,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/b9fdd7b7-38d9-417b-87b7-057c2dd6a5c4/sari-life-76-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/01050f7f-1b93-4dbe-80bf-bcfc8b9b4f8c/sari-life-76-1280.webp",
+        "w": 1280,
+        "h": 1920
+      }
+    ]
+  },
+  "/__l5e/assets-v1/b552239c-a7f8-4f87-9564-168d41b7b04f/sari-life-83.jpg": {
+    "w": 1280,
+    "h": 1920,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/2397cb65-0757-4b38-b0b0-096e3b480854/sari-life-83-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/ee57da84-7b07-49cd-a33e-294bad2d0a60/sari-life-83-1280.webp",
+        "w": 1280,
+        "h": 1920
+      }
+    ]
+  },
+  "/__l5e/assets-v1/51ad5c6e-da41-41d4-91ba-14862cbcba41/sari-life-95.jpg": {
+    "w": 1280,
+    "h": 1920,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/cc84e6be-04d2-4b61-bfbf-f3f48a2e1b72/sari-life-95-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/21112133-596b-42ac-9c87-e8c3ab2ab145/sari-life-95-1280.webp",
+        "w": 1280,
+        "h": 1920
+      }
+    ]
+  },
+  "/__l5e/assets-v1/5425c49b-81f4-4415-9451-9bddc36746ab/sari-life-98.jpg": {
+    "w": 1280,
+    "h": 1920,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/34148a3f-e8a5-43a7-a504-1f86d61fd596/sari-life-98-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/e1490759-edd8-4004-8666-4c1fd389be3b/sari-life-98-1280.webp",
+        "w": 1280,
+        "h": 1920
+      }
+    ]
+  },
+  "/__l5e/assets-v1/8a94cb92-5170-4b0e-b490-0d70f47ee69d/sari-nocrop-4.jpg": {
+    "w": 1920,
+    "h": 1280,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/f767aa04-2320-403f-9f45-23c26d6d5362/sari-nocrop-4-640.webp",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "url": "/__l5e/assets-v1/b9360588-ca9c-4ad8-bcf5-fe5c180f4163/sari-nocrop-4-1280.webp",
+        "w": 1280,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/b8d9aac3-0bb7-419d-984b-1cb3908ca36e/sari-nocrop-4-1920.webp",
+        "w": 1920,
+        "h": 1280
+      }
+    ]
+  },
+  "/__l5e/assets-v1/8e789c1e-449a-4ac9-b0b6-4b520f10760a/sari-nocrop-50.jpg": {
+    "w": 1280,
+    "h": 1920,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/e716873d-3399-4d79-af6b-51a89df2dee0/sari-nocrop-50-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/a1892402-47c1-4abe-8b7e-5797838cf2f1/sari-nocrop-50-1280.webp",
+        "w": 1280,
+        "h": 1920
+      }
+    ]
+  },
+  "/__l5e/assets-v1/472a6562-5e68-4716-a67f-800c640e2992/sari-red-flat.jpg": {
+    "w": 768,
+    "h": 1024,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/cd201010-6f12-4093-9ecf-1e0fe995501c/sari-red-flat-640.webp",
+        "w": 640,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/868e79dc-018c-428f-94a2-f795770fcf7e/sari-red-flat.webp",
+        "w": 768,
+        "h": 1024
+      }
+    ]
+  },
+  "/__l5e/assets-v1/0d6c3bc7-c08b-4dcc-9a4b-f2f5c36f041d/sari-table-cover.webp": {
+    "w": 1024,
+    "h": 614,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/1ad7f396-9d31-4e6d-affb-f7ecc072b349/sari-table-cover-640.webp",
+        "w": 640,
+        "h": 384
+      },
+      {
+        "url": "/__l5e/assets-v1/e00905d0-7303-4bc1-964a-a5d5e9423396/sari-table-cover.webp",
+        "w": 1024,
+        "h": 614
+      }
+    ]
+  },
+  "/__l5e/assets-v1/9218eb45-20cd-413e-aebd-5ed59c74df35/table-dinner.jpg": {
+    "w": 683,
+    "h": 1024,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/675a71a2-caa2-4ed9-8b21-98de035881b6/table-dinner-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/83a7b4e9-0875-4538-b5f4-7f954bc687a5/table-dinner.webp",
+        "w": 683,
+        "h": 1024
+      }
+    ]
+  },
+  "/__l5e/assets-v1/db11f40e-286c-45a8-af46-123354abec53/tray-glasses.jpg": {
+    "w": 1280,
+    "h": 1920,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/8d42e619-84b0-4c9c-9c75-30c6394927ff/tray-glasses-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/b3baf05d-1f50-4799-a01e-fc96304bc72a/tray-glasses-1280.webp",
+        "w": 1280,
+        "h": 1920
+      }
+    ]
+  },
+  "/__l5e/assets-v1/a8f2b84c-e3f9-4cbf-b23f-c720adc76686/vineyard-glass.jpg": {
+    "w": 683,
+    "h": 1024,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/6a1ba6ad-6740-4cc8-8ee5-e7044e63d234/vineyard-glass-640.webp",
+        "w": 640,
+        "h": 960
+      },
+      {
+        "url": "/__l5e/assets-v1/f002fa9d-80cc-48a8-a7c1-13721116de29/vineyard-glass.webp",
+        "w": 683,
+        "h": 1024
+      }
+    ]
+  },
+  "/__l5e/assets-v1/fa2200d0-4f48-43a0-ac42-5ff5223fc4d7/white-bottle-hands.jpg": {
+    "w": 960,
+    "h": 1280,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/5c84cdd5-8473-4ce1-adc8-a168e2836d00/white-bottle-hands-640.webp",
+        "w": 640,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/0e6319e6-8530-4743-9831-fcfbfcb82940/white-bottle-hands.webp",
+        "w": 960,
+        "h": 1280
+      }
+    ]
+  },
+  "/__l5e/assets-v1/d1f6e3a3-41e1-4003-a707-144d3b8eb7fe/white-tray.jpg": {
+    "w": 768,
+    "h": 1024,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/8c5ddc04-c077-496a-88f0-dc23794a6ab9/white-tray-640.webp",
+        "w": 640,
+        "h": 853
+      },
+      {
+        "url": "/__l5e/assets-v1/6ea726ac-d6bc-4e59-bbf9-9be3b57f77c7/white-tray.webp",
+        "w": 768,
+        "h": 1024
+      }
+    ]
+  },
+  "/__l5e/assets-v1/2b4802ca-0e9a-4b80-9a50-3162ce1fd602/wordmark.png": {
+    "w": 1989,
+    "h": 1257,
+    "variants": [
+      {
+        "url": "/__l5e/assets-v1/7020cd6c-8fbb-43df-98f9-891ff6dc4c48/wordmark-640.webp",
+        "w": 640,
+        "h": 404
+      },
+      {
+        "url": "/__l5e/assets-v1/19c8620d-5a20-4ff6-92bc-a2827184607c/wordmark-1280.webp",
+        "w": 1280,
+        "h": 809
+      },
+      {
+        "url": "/__l5e/assets-v1/59addd0a-4d97-4f07-9fc7-9d691b80d2d5/wordmark-1920.webp",
+        "w": 1920,
+        "h": 1213
+      },
+      {
+        "url": "/__l5e/assets-v1/6cf8e7c9-e159-49a9-9d3d-2d5d11e1d7fd/wordmark.webp",
+        "w": 1989,
+        "h": 1257
+      }
+    ]
+  }
+}
