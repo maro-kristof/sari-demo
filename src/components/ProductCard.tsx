@@ -3,6 +3,7 @@ import { HandwrittenText } from "./HandwrittenText";
 import { Reveal } from "./Reveal";
 import type { Product } from "@/data/products";
 import { productsIndex } from "@/content/site";
+import { OptimizedImage } from "./OptimizedImage";
 
 export function ProductCard({
   product,
@@ -20,10 +21,10 @@ export function ProductCard({
         aria-label={`${product.name} — ${product.descriptorLine}`}
       >
         <div className="overflow-hidden bg-ink/40">
-          <img
+          <OptimizedImage
             src={product.sceneImage}
             alt={product.sceneAlt}
-            loading="lazy"
+            sizes="(min-width: 768px) 33vw, 100vw"
             className="aspect-3/4 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
           />
         </div>

@@ -8,7 +8,8 @@ import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
 import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
 import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
 import anettaRasto from "@/assets/anetta-rasto-2.jpg.asset.json";
-import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
+import { absoluteUrl, breadcrumbLd, imageObjectLd } from "@/lib/seo";
+import { OptimizedImage, imageEntry } from "@/components/OptimizedImage";
 
 export const Route = createFileRoute("/story")({
   head: () => ({
@@ -89,9 +90,10 @@ function StoryPage() {
       <SectionCream flush>
         <Container size="wide">
           <Reveal>
-            <img
+            <OptimizedImage
               src={images.vineyardGlass}
               alt={story.imageAlt}
+              sizes="100vw"
               className="aspect-video w-full object-cover"
             />
           </Reveal>
@@ -139,10 +141,10 @@ function StoryPage() {
           <ul className="mt-12 grid gap-12 md:grid-cols-3">
             {story.people.map((p, i) => (
               <Reveal as="li" key={p.name} delay={i * 100}>
-                <img
+                <OptimizedImage
                   src={peopleImages[i]}
                   alt={p.imageAlt}
-                  loading="lazy"
+                  sizes="(min-width: 768px) 33vw, 100vw"
                   className="aspect-[4/5] w-full object-cover"
                 />
                 <h3 className="mt-6 text-xl">{p.name}</h3>
@@ -163,10 +165,10 @@ function StoryPage() {
           <ul className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             {galleryImages.map((img, i) => (
               <Reveal as="li" key={img.src} delay={i * 80} className="overflow-hidden">
-                <img
+                <OptimizedImage
                   src={img.src}
                   alt={img.alt}
-                  loading="lazy"
+                  sizes="(min-width: 768px) 25vw, 50vw"
                   className="aspect-[3/4] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                 />
               </Reveal>
@@ -179,10 +181,10 @@ function StoryPage() {
         <Container size="wide">
           <PullQuote>{story.quote}</PullQuote>
           <Reveal delay={100}>
-            <img
+            <OptimizedImage
               src={images.cases}
               alt={story.secondaryImageAlt}
-              loading="lazy"
+              sizes="100vw"
               className="mt-20 aspect-video w-full object-cover"
             />
           </Reveal>
