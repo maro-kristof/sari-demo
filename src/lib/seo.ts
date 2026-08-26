@@ -20,3 +20,40 @@ export function breadcrumbLd(items: { name: string; path: string }[]) {
     })),
   };
 }
+
+/** ImageObject JSON-LD for a known asset (with real dimensions when available). */
+export function imageObjectLd(
+  src: string,
+  caption?: string,
+  dimensions?: { w: number; h: number },
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    contentUrl: absoluteUrl(src),
+    url: absoluteUrl(src),
+    ...(dimensions ? { width: dimensions.w, height: dimensions.h } : {}),
+    ...(caption ? { caption } : {}),
+  };
+}
+
+/** WebPage JSON-LD with primaryImageOfPage. */
+export function webPageLd(opts: {
+  path: string;
+  name: string;
+  description: string;
+  image?: string;
+  imageDimensions?: { w: number; h: number };
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": absoluteUrl(opts.path),
+    url: absoluteUrl(opts.path),
+    name: opts.name,
+    description: opts.description,
+    ...(opts.image
+      ? { primaryImageOfPage: imageObjectLd(opts.image, opts.name, opts.imageDimensions) }
+      : {}),
+  };
+}
