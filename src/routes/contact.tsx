@@ -16,6 +16,17 @@ export const Route = createFileRoute("/contact")({
       { property: "og:url", content: absoluteUrl("/contact") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/contact") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: ContactPage,
 });

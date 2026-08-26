@@ -27,6 +27,17 @@ export const Route = createFileRoute("/for-business")({
       { property: "og:url", content: absoluteUrl("/for-business") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/for-business") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "For business", path: "/for-business" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: ForBusinessPage,
 });

@@ -17,6 +17,17 @@ export const Route = createFileRoute("/where-to-buy")({
       { property: "og:url", content: absoluteUrl("/where-to-buy") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/where-to-buy") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "Where to buy", path: "/where-to-buy" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: WhereToBuyPage,
 });

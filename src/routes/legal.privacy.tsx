@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { legal } from "@/content/site";
 import { LegalPage } from "@/components/LegalPage";
-import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
+import { absoluteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/legal/privacy")({
   head: () => ({

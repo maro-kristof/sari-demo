@@ -21,6 +21,17 @@ export const Route = createFileRoute("/story")({
       { property: "og:url", content: absoluteUrl("/story") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/story") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "Story", path: "/story" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: StoryPage,
 });
