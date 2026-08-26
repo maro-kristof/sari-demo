@@ -6,6 +6,8 @@ import { Reveal } from "@/components/Reveal";
 import { ProductCard } from "@/components/ProductCard";
 import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
 
+const ogImage = absoluteUrl(products[0]?.sceneImage ?? "/favicon.png");
+
 export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
