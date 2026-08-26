@@ -6,6 +6,7 @@ import {
   PASTEURISED_NOTE,
 } from "@/data/products";
 import { productPage } from "@/content/site";
+import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
 import { Container, Eyebrow } from "@/components/Section";
 import { HandwrittenText } from "@/components/HandwrittenText";
 import { SpecTable } from "@/components/SpecTable";
