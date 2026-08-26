@@ -43,7 +43,7 @@ export function webPageLd(opts: {
   name: string;
   description: string;
   image?: string;
-  imageDimensions?: { w: number; h: number };
+  imageDimensions?: { w: number; h: number } | undefined;
 }) {
   return {
     "@context": "https://schema.org",

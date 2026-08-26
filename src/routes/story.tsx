@@ -146,7 +146,7 @@ function StoryPage() {
             {story.people.map((p, i) => (
               <Reveal as="li" key={p.name} delay={i * 100}>
                 <OptimizedImage
-                  src={peopleImages[i]}
+                  src={peopleImages[i]!}
                   alt={p.imageAlt}
                   sizes="(min-width: 768px) 33vw, 100vw"
                   className="aspect-[4/5] w-full object-cover"
