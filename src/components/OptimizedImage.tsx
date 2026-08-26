@@ -39,7 +39,7 @@ export function OptimizedImage({ src, alt, priority, sizes, className, ...rest }
   const largest = entry.variants[entry.variants.length - 1];
 
   return (
-    <picture>
+    <picture className="contents">
       <source type="image/webp" srcSet={srcSet} sizes={sizes ?? "100vw"} />
       <img
         src={src}
