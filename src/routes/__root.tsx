@@ -13,6 +13,8 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
+import { images } from "../content/site";
+import { SITE_URL, absoluteUrl } from "../lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -115,18 +117,51 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Sari",
-          legalName: "TAJNA s.r.o.",
-          email: "info@sarisparkling.com",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Levická 743",
-            postalCode: "952 01",
-            addressLocality: "Vráble",
-            addressCountry: "SK",
-          },
-          sameAs: ["https://www.instagram.com/sari_sparkling/"],
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
+              name: "Sari",
+              legalName: "TAJNA s.r.o.",
+              url: SITE_URL,
+              logo: absoluteUrl(images.wordmark),
+              image: absoluteUrl(images.hero),
+              email: "hello@sarisparkling.com",
+              description:
+                "Sari is a premium non alcoholic sparkling alternative to wine, made by winemakers from botanicals, fruit and verjuice.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Levická 743",
+                postalCode: "952 01",
+                addressLocality: "Vráble",
+                addressCountry: "SK",
+              },
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  contactType: "customer service",
+                  email: "hello@sarisparkling.com",
+                  availableLanguage: ["en", "sk"],
+                },
+              ],
+              sameAs: ["https://www.instagram.com/sari_sparkling/"],
+            },
+            {
+              "@type": "Brand",
+              "@id": `${SITE_URL}/#brand`,
+              name: "Sari",
+              logo: absoluteUrl(images.wordmark),
+              url: SITE_URL,
+            },
+            {
+              "@type": "WebSite",
+              "@id": `${SITE_URL}/#website`,
+              name: "Sari",
+              url: SITE_URL,
+              inLanguage: "en",
+              publisher: { "@id": `${SITE_URL}/#organization` },
+            },
+          ],
         }),
       },
     ],

@@ -3,6 +3,7 @@ import { contact, brand } from "@/content/site";
 import { Container, SectionCream, Eyebrow } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { InquiryForm } from "@/components/InquiryForm";
+import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -12,9 +13,20 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: contact.metaTitle },
       { property: "og:description", content: contact.metaDescription },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: absoluteUrl("/contact") },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/contact") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: ContactPage,
 });

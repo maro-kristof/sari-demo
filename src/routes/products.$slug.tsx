@@ -6,6 +6,7 @@ import {
   PASTEURISED_NOTE,
 } from "@/data/products";
 import { productPage } from "@/content/site";
+import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
 import { Container, Eyebrow } from "@/components/Section";
 import { HandwrittenText } from "@/components/HandwrittenText";
 import { SpecTable } from "@/components/SpecTable";
@@ -38,6 +39,8 @@ export const Route = createFileRoute("/products/$slug")({
     }
     const p = loaderData.product;
     const title = `${p.name} — non alcoholic sparkling | Sari`;
+    const url = absoluteUrl(`/products/${params.slug}`);
+    const image = absoluteUrl(p.sceneImage);
     return {
       meta: [
         { title },
@@ -45,9 +48,11 @@ export const Route = createFileRoute("/products/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: p.metaDescription },
         { property: "og:type", content: "product" },
-        { property: "og:url", content: `/products/${params.slug}` },
+        { property: "og:url", content: url },
+        { property: "og:image", content: image },
+        { name: "twitter:image", content: image },
       ],
-      links: [{ rel: "canonical", href: `/products/${params.slug}` }],
+      links: [{ rel: "canonical", href: url }],
       scripts: [
         {
           type: "application/ld+json",
@@ -56,13 +61,42 @@ export const Route = createFileRoute("/products/$slug")({
             "@type": "Product",
             name: p.name,
             description: p.metaDescription,
+            url,
+            image: [
+              absoluteUrl(p.bottleImage),
+              image,
+              ...p.gallery.map((g) => absoluteUrl(g.src)),
+            ],
+            sku: `sari-${p.slug}`,
             brand: { "@type": "Brand", name: "Sari" },
             manufacturer: {
               "@type": "Organization",
               name: "Tajna Vineyards & Winery",
             },
             category: "Non alcoholic sparkling drink",
+            additionalProperty: p.spec.map((row) => ({
+              "@type": "PropertyValue",
+              name: row.label,
+              value: row.value,
+            })),
+            offers: {
+              "@type": "Offer",
+              url: productPage.buyUrl,
+              availability: "https://schema.org/InStock",
+              priceCurrency: "EUR",
+              seller: { "@type": "Organization", name: "Vino Tajna" },
+            },
           }),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(
+            breadcrumbLd([
+              { name: "Home", path: "/" },
+              { name: "Products", path: "/products" },
+              { name: p.name, path: `/products/${params.slug}` },
+            ]),
+          ),
         },
       ],
     };

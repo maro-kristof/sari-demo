@@ -8,6 +8,7 @@ import { InquiryForm } from "@/components/InquiryForm";
 import sheetWhite from "@/assets/tasting-White.pdf.asset.json";
 import sheetRose from "@/assets/tasting-Rose.pdf.asset.json";
 import sheetRed from "@/assets/tasting-Red.pdf.asset.json";
+import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
 
 const sheetUrls: Record<string, string> = {
   white: sheetWhite.url,
@@ -23,9 +24,22 @@ export const Route = createFileRoute("/for-business")({
       { property: "og:title", content: forBusiness.metaTitle },
       { property: "og:description", content: forBusiness.metaDescription },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/for-business" },
+      { property: "og:url", content: absoluteUrl("/for-business") },
+      { property: "og:image", content: absoluteUrl(images.cases) },
+      { name: "twitter:image", content: absoluteUrl(images.cases) },
     ],
-    links: [{ rel: "canonical", href: "/for-business" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/for-business") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "For business", path: "/for-business" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: ForBusinessPage,
 });

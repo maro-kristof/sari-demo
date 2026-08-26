@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { legal } from "@/content/site";
 import { LegalPage } from "@/components/LegalPage";
+import { absoluteUrl } from "@/lib/seo";
 
 export const Route = createFileRoute("/legal/cookies")({
   head: () => ({
@@ -16,9 +17,9 @@ export const Route = createFileRoute("/legal/cookies")({
         content: "Which cookies the Sari website uses.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/legal/cookies" },
+      { property: "og:url", content: absoluteUrl("/legal/cookies") },
     ],
-    links: [{ rel: "canonical", href: "/legal/cookies" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/legal/cookies") }],
   }),
   component: () => <LegalPage doc={legal.cookies} />,
 });

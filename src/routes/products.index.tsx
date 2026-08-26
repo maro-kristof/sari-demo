@@ -4,6 +4,9 @@ import { products } from "@/data/products";
 import { Container, SectionCream, Eyebrow } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { ProductCard } from "@/components/ProductCard";
+import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
+
+const ogImage = absoluteUrl(products[0]?.sceneImage ?? "/favicon.png");
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
@@ -13,9 +16,22 @@ export const Route = createFileRoute("/products/")({
       { property: "og:title", content: productsIndex.metaTitle },
       { property: "og:description", content: productsIndex.metaDescription },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/products" },
+      { property: "og:url", content: absoluteUrl("/products") },
+      { property: "og:image", content: ogImage },
+      { name: "twitter:image", content: ogImage },
     ],
-    links: [{ rel: "canonical", href: "/products" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/products") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "Products", path: "/products" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: ProductsIndex,
 });

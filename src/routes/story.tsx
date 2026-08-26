@@ -8,6 +8,7 @@ import lifeToast from "@/assets/sari-life-83.jpg.asset.json";
 import lifeTwoGlasses from "@/assets/sari-life-95.jpg.asset.json";
 import lifeSip from "@/assets/sari-life-98.jpg.asset.json";
 import anettaRasto from "@/assets/anetta-rasto-2.jpg.asset.json";
+import { absoluteUrl, breadcrumbLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/story")({
   head: () => ({
@@ -17,9 +18,22 @@ export const Route = createFileRoute("/story")({
       { property: "og:title", content: story.metaTitle },
       { property: "og:description", content: story.metaDescription },
       { property: "og:type", content: "article" },
-      { property: "og:url", content: "/story" },
+      { property: "og:url", content: absoluteUrl("/story") },
+      { property: "og:image", content: absoluteUrl(images.vineyardGlass) },
+      { name: "twitter:image", content: absoluteUrl(images.vineyardGlass) },
     ],
-    links: [{ rel: "canonical", href: "/story" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/story") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbLd([
+            { name: "Home", path: "/" },
+            { name: "Story", path: "/story" },
+          ]),
+        ),
+      },
+    ],
   }),
   component: StoryPage,
 });
