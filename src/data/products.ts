@@ -41,10 +41,13 @@ export type Product = {
   wineListName: string;
   bottleImage: string;
   bottleAlt: string;
+  /** Longer description used in ImageObject structured data. */
+  bottleDesc: string;
   sceneImage: string;
   sceneAlt: string;
+  sceneDesc: string;
   /** Secondary and tertiary photos shown in the product gallery. */
-  gallery: { src: string; alt: string }[];
+  gallery: { src: string; alt: string; desc: string }[];
   metaDescription: string;
 };
 
