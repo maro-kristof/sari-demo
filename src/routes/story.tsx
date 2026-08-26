@@ -33,6 +33,27 @@ export const Route = createFileRoute("/story")({
           ]),
         ),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: story.metaTitle,
+          description: story.metaDescription,
+          image: absoluteUrl(images.vineyardGlass),
+          mainEntityOfPage: absoluteUrl("/story"),
+          author: {
+            "@type": "Person",
+            name: "Sarah Demešová",
+            jobTitle: "Co-author of Sari",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sari Sparkling",
+            url: absoluteUrl("/"),
+          },
+        }),
+      },
     ],
   }),
   component: StoryPage,
