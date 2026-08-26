@@ -249,8 +249,14 @@ export const story = {
     },
   ],
   quote: "Sari is a gastronomic drink that deserves the same place at the table as wine.",
-  imageAlt: "A glass of Sari Red held up against the vineyard",
-  secondaryImageAlt: "Cases of Sari being stacked at the winery",
+  imageAlt:
+    "A glass of Sari Red sparkling held up against the sunlit rows of the Tajna family vineyard in Slovakia",
+  imageDesc:
+    "A hand holding a glass of Sari Red non-alcoholic sparkling against the vineyard rows of Tajna Vineyards & Winery, where Sari is made.",
+  secondaryImageAlt:
+    "Sari bottles and gift boxes arranged on a table at the Tajna winery in Vráble",
+  secondaryImageDesc:
+    "Bottles of Sari White, Rosé and Red with branded boxes on a table at the Tajna winery in Vráble, Slovakia.",
 };
 
 
