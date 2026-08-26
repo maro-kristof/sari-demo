@@ -67,10 +67,10 @@ export const Route = createFileRoute("/story")({
 const peopleImages = [images.portraitGlasses, anettaRasto.url];
 
 const galleryImages = [
-  { src: lifeBoxes.url, alt: "Woman carrying a stack of green Sari gift boxes in the winery warehouse" },
-  { src: lifeToast.url, alt: "Man raising a glass of Sari beside stacked Sari boxes in the warehouse" },
-  { src: lifeTwoGlasses.url, alt: "Woman drinking Sari while balancing a second glass above her head" },
-  { src: lifeSip.url, alt: "Man tasting a glass of Sari against a white brick wall" },
+  { src: lifeBoxes.url, alt: "Behind the scenes at Sari: a stack of green Sari gift boxes being carried through the Tajna winery" },
+  { src: lifeToast.url, alt: "Raising a glass of Sari sparkling beside stacked Sari boxes at the winery" },
+  { src: lifeTwoGlasses.url, alt: "Enjoying Sari sparkling at the winery, playfully balancing a second glass" },
+  { src: lifeSip.url, alt: "Tasting a glass of Sari sparkling against a white brick wall at the winery" },
 ];
 
 
