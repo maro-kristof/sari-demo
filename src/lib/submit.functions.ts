@@ -26,15 +26,47 @@ export const subscribeNewsletter = createServerFn({ method: "POST" })
       source: data.source ?? "website",
     });
 
-    if (error) {
+    if (error && error.code !== "23505") {
       // Duplicate email (unique constraint) is fine — the address is already subscribed.
-      if (error.code === "23505") return { ok: true as const };
       console.error("Newsletter insert error:", error);
       throw new Error("Failed to save subscription");
     }
 
+    // Sync to Ecomail (non-blocking for the user: log but don't fail the form)
+    const apiKey = process.env["ECOMAIL_API_KEY"];
+    const listId = process.env["ECOMAIL_LIST_ID"];
+    if (apiKey && listId) {
+      try {
+        const res = await fetch(
+          `https://api2.ecomailapp.cz/lists/${listId}/subscribe`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              key: apiKey,
+            },
+            body: JSON.stringify({
+              subscriber_data: {
+                email: data.email,
+                source: data.source ?? "sarisparkling.com",
+              },
+              trigger_autoresponders: true,
+              update_existing: true,
+              resubscribe: true,
+            }),
+          },
+        );
+        if (!res.ok) {
+          console.error("Ecomail subscribe failed:", res.status, await res.text());
+        }
+      } catch (e) {
+        console.error("Ecomail subscribe error:", e);
+      }
+    }
+
     return { ok: true as const };
   });
+
 
 const inquirySchema = z.object({
   name: z.string().min(1).max(200),
