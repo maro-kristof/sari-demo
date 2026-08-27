@@ -69,7 +69,7 @@ const Email = ({ name, company, role, email, phone, country, businessType, messa
 export const template = {
   component: Email,
   subject: (data: Record<string, any>) =>
-    `Nový dopyt: ${data.name ?? 'neznámy'}${data.company ? ` (${data.company})` : ''}`,
+    `Nový dopyt: ${data.name ?? 'neznámy'}${data['company'] ? ` (${data['company']})` : ''}`,
   displayName: 'Notifikácia dopytu',
   to: 'hello@sarisparkling.com',
   previewData: {
