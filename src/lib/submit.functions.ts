@@ -103,5 +103,30 @@ export const submitInquiryFn = createServerFn({ method: "POST" })
       throw new Error("Failed to send inquiry");
     }
 
+    // Email notification to the team — non-blocking for the user.
+    try {
+      const { sendTemplateEmail } = await import(
+        "@/lib/email-templates/send-email"
+      );
+      await sendTemplateEmail("inquiry-notification", "hello@sarisparkling.com", {
+        templateData: {
+          name: data.name,
+          company: data.company,
+          role: data.role,
+          email: data.email,
+          phone: data.phone,
+          country: data.country,
+          businessType: data.businessType,
+          message: data.message,
+          source: data.source,
+        },
+        idempotencyKey: `inquiry-${data.source}-${data.email}-${Date.now()}`,
+        replyTo: data.email,
+      });
+    } catch (e) {
+      // Domain not verified yet or send failure — inquiry is safely stored.
+      console.error("Inquiry email notification failed:", e);
+    }
+
     return { ok: true as const };
   });
